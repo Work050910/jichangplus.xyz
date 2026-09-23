@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "faq-001",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "新手用户如何根据日常需求挑选合适的机场套餐？",
+    "primaryKeyword": "新手机场挑选指南",
+    "supportingKeywords": [
+      "新手机场挑选指南",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】月付试用，勿直接长付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-01",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-002",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "远程办公与跨境协作人群该侧重哪类节点服务？",
+    "primaryKeyword": "远程办公节点选择",
+    "supportingKeywords": [
+      "远程办公节点选择",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】优先考虑高稳定专线与固定落地IP。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-02",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-003",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "轻度网页浏览与重度视频用户在选型上有何差异？",
+    "primaryKeyword": "轻度与重度用户对比",
+    "supportingKeywords": [
+      "轻度与重度用户对比",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】轻度注重平价年付，重度注重晚高峰带宽。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-03",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-004",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "家庭多人共用时如何选择支持多连接的方案？",
+    "primaryKeyword": "家庭多设备机场推荐",
+    "supportingKeywords": [
+      "家庭多设备机场推荐",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】核查设备并发上限与IP归属策略。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-04",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-005",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "开发人员与科研人员应如何评估服务商的协议兼容性？",
+    "primaryKeyword": "开发者网络服务选择",
+    "supportingKeywords": [
+      "开发者网络服务选择",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】需支持原生分流规则与终端环境代理。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-05",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-006",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "备用机场应该以何种标准来配置才能防范断网？",
+    "primaryKeyword": "备用机场配置原则",
+    "supportingKeywords": [
+      "备用机场配置原则",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】选择不同入口机房与结算周期的平价套餐。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-06",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-007",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "自研客户端与第三方通用客户端的机场该怎么选？",
+    "primaryKeyword": "客户端生态选型",
+    "supportingKeywords": [
+      "客户端生态选型",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】追求简便选自研，追求定制选开源通用端。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-07",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-008",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "如何识别虚标带宽与超卖严重的低质机场？",
+    "primaryKeyword": "虚标与超卖辨别技巧",
+    "supportingKeywords": [
+      "虚标与超卖辨别技巧",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】通过晚高峰丢包测试与社区评价观察。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-08",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-009",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "跨境电商多店铺运营防关联对机场有何硬性要求？",
+    "primaryKeyword": "跨境电商防关联网络",
+    "supportingKeywords": [
+      "跨境电商防关联网络",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】必须配备独享纯净静态IP并隔离浏览器环境。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-09",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-010",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "年付极低价格套餐背后的潜在风险有哪些？",
+    "primaryKeyword": "超低价年付风险剖析",
+    "supportingKeywords": [
+      "超低价年付风险剖析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】跑路概率偏高，建议严格执行小额月付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-10",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-011",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "针对多设备出差旅行者的网络服务该如何准备？",
+    "primaryKeyword": "差旅多设备网络准备",
+    "supportingKeywords": [
+      "差旅多设备网络准备",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】预装两套以上独立订阅并保持离线配置。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-11",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-11",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-012",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "为什么不建议把所有日常流量都押注在单一服务上？",
+    "primaryKeyword": "单点故障与容灾原则",
+    "supportingKeywords": [
+      "单点故障与容灾原则",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】入口机房波动不可避免，双订阅互备最稳。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-12",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-12",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-013",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "高校校园网复杂认证环境下如何优选适配服务？",
+    "primaryKeyword": "校园网代理适配技巧",
+    "supportingKeywords": [
+      "校园网代理适配技巧",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】选择支持DoH防DNS拦截与常见端口穿透者。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-13",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-13",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-014",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "如何通过工单响应速度与支持文档评估服务质量？",
+    "primaryKeyword": "客服支持与工单评估",
+    "supportingKeywords": [
+      "客服支持与工单评估",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】购买前发送售前技术咨询以检验响应态度。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-14",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-14",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-015",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "不同操作系统生态之间对机场兼容性的实际影响？",
+    "primaryKeyword": "跨操作系统选型注意事项",
+    "supportingKeywords": [
+      "跨操作系统选型注意事项",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】确保服务商提供Clash、Surge或sing-box通用链接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-15",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-15",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-016",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "大户版套餐适合哪些团队或特定个人使用场景？",
+    "primaryKeyword": "大户版流量套餐定位",
+    "supportingKeywords": [
+      "大户版流量套餐定位",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】适合高频多端同步、团队共享与大文件下载。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-16",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-16",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-017",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "新上线的小众机场是否值得尝试与纳入备选？",
+    "primaryKeyword": "新上线小众机场评估",
+    "supportingKeywords": [
+      "新上线小众机场评估",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】只做短期尝鲜，切勿存储主账号或敏感凭据。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-17",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-17",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-018",
+    "category": "机场推荐、选择方法与适用人群",
+    "question": "如何合理利用机场测评数据而不盲从跑分排行？",
+    "primaryKeyword": "测评数据客观看待方法",
+    "supportingKeywords": [
+      "测评数据客观看待方法",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】关注网络抖动与真实场景连通率而非峰值。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "rec-18",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#rec-18",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-019",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 客户端规则模式与全局模式有什么本质区别？",
+    "primaryKeyword": "Clash模式区别解析",
+    "supportingKeywords": [
+      "Clash模式区别解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】日常推荐规则分流，特定调试时使用全局。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-01",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-020",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 订阅配置经常更新失败应该按什么步骤排查？",
+    "primaryKeyword": "Clash订阅更新失败排障",
+    "supportingKeywords": [
+      "Clash订阅更新失败排障",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】检查系统时间同步、订阅链接有效性及网络代理。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-02",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-021",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "如何使用 Mixin 或扩展脚本防止自定义规则被覆盖？",
+    "primaryKeyword": "Clash配置覆写实战",
+    "supportingKeywords": [
+      "Clash配置覆写实战",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】编写本地覆写片段，实现规则与节点分离。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-03",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-022",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash Meta (Mihomo) 内核相比原版有哪些关键优势？",
+    "primaryKeyword": "Mihomo内核优势解析",
+    "supportingKeywords": [
+      "Mihomo内核优势解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】支持更多新协议、嗅探分流及复杂路由链。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-04",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-023",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "为什么 Clash 启动后系统部分国内网站打不开？",
+    "primaryKeyword": "Clash国内网站异常排查",
+    "supportingKeywords": [
+      "Clash国内网站异常排查",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】检查 DNS 是否配置 Fake-IP 且直连规则完备。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-05",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-024",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "如何给 Clash 的节点列表进行自定义命名与分组？",
+    "primaryKeyword": "Clash节点重命名技巧",
+    "supportingKeywords": [
+      "Clash节点重命名技巧",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】使用节点重命名规则或 Sub-Store 统一管理。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-06",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-025",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 的 URL-Test 自动优选策略组会导致流量浪费吗？",
+    "primaryKeyword": "URL-Test策略消耗评估",
+    "supportingKeywords": [
+      "URL-Test策略消耗评估",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】定期探测消耗极低，但测速并发会产生突发请求。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-07",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-026",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "在 Windows 上如何设置 Clash 开机自启与静默运行？",
+    "primaryKeyword": "Clash Windows静默自启",
+    "supportingKeywords": [
+      "Clash Windows静默自启",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】在通用设置中勾选 Start with Windows 并最小化。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-08",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-027",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "macOS 上使用 Clash Verge 时系统权限该如何赋予？",
+    "primaryKeyword": "macOS客户端权限配置",
+    "supportingKeywords": [
+      "macOS客户端权限配置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】授予辅助功能与网络系统扩展权限以启用TUN。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-09",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-028",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 配置文件格式错误导致无法启动怎么快速恢复？",
+    "primaryKeyword": "Clash配置格式报错修复",
+    "supportingKeywords": [
+      "Clash配置格式报错修复",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】使用代码编辑器排查缩进，或还原备份yaml文件。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-10",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-029",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "如何让部分不需要代理的本机软件绕过 Clash？",
+    "primaryKeyword": "单应用绕过Clash配置",
+    "supportingKeywords": [
+      "单应用绕过Clash配置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】利用进程名称分流规则或 TUN 排除黑名单。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-11",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-11",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-030",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 开启 TUN 虚拟网卡模式有哪些使用注意事项？",
+    "primaryKeyword": "TUN虚拟网卡模式指南",
+    "supportingKeywords": [
+      "TUN虚拟网卡模式指南",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】能拦截命令行与游戏，但需防范局域网死循环。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-12",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-12",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-031",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "多条 Clash 订阅如何在同一个客户端中同时加载？",
+    "primaryKeyword": "Clash多订阅并存配置",
+    "supportingKeywords": [
+      "Clash多订阅并存配置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】建立不同配置文件随时切换，或做订阅聚合。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-13",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-13",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-032",
+    "category": "Clash 客户端、订阅、兼容与常见问题",
+    "question": "Clash 客户端长时间运行内存占用过高怎么优化？",
+    "primaryKeyword": "Clash内存优化技巧",
+    "supportingKeywords": [
+      "Clash内存优化技巧",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】关闭不必要的详细日志记录，定期重启客户端。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "clash-14",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#clash-14",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-033",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "Shadowsocks (SS) 协议的基本原理与结构特点是什么？",
+    "primaryKeyword": "Shadowsocks协议原理解析",
+    "supportingKeywords": [
+      "Shadowsocks协议原理解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】采用对称加密与端到端传输，设计简洁高效。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-01",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-034",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "SS 协议目前常用的加密算法如 AEAD 是怎么回事？",
+    "primaryKeyword": "SS AEAD加密算法科普",
+    "supportingKeywords": [
+      "SS AEAD加密算法科普",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】提供认证与保密双重保护，抗重放攻击性强。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-02",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-035",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "为什么现代客户端普遍兼容 Shadowsocks 基础节点？",
+    "primaryKeyword": "SS协议通用兼容性解析",
+    "supportingKeywords": [
+      "SS协议通用兼容性解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】标准统一且开源生态成熟，成为主流基底。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-03",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-036",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "Shadowsocks 节点在多设备环境下的性能表现如何？",
+    "primaryKeyword": "SS多设备性能评估",
+    "supportingKeywords": [
+      "SS多设备性能评估",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】CPU占用极低，极适合路由器与老旧手机运行。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-04",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-037",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "SS 节点如何配合分流规则实现日常平稳加速？",
+    "primaryKeyword": "SS分流规则配置指南",
+    "supportingKeywords": [
+      "SS分流规则配置指南",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】结合 GEOIP 与域名列表实现国内直连海外走SS。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-05",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-038",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "ShadowsocksR (SSR) 与原版 SS 之间有哪些核心差异？",
+    "primaryKeyword": "SSR与SS差异辨析",
+    "supportingKeywords": [
+      "SSR与SS差异辨析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】SSR增加了混淆与协议插件，现多被新协议取代。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-06",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-039",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "使用 SS 协议时如何检验是否存在 DNS 泄漏隐患？",
+    "primaryKeyword": "SS防DNS泄漏检查",
+    "supportingKeywords": [
+      "SS防DNS泄漏检查",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】通过在线泄漏测试平台核实出口DNS是否为海外。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-07",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-040",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "自建 SS 节点与商业机场提供的 SS 节点各有何优劣？",
+    "primaryKeyword": "自建与机场SS对比",
+    "supportingKeywords": [
+      "自建与机场SS对比",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】自建独享但IP易被封，机场有专线容灾且成本低。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-08",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-041",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "Shadowsocks 插件如 v2ray-plugin 的作用与必要性？",
+    "primaryKeyword": "SS混淆插件应用解析",
+    "supportingKeywords": [
+      "SS混淆插件应用解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】将流量伪装为普通 WebSockets，提升抗干扰性。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-09",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-042",
+    "category": "SS / Shadowsocks 协议、兼容与基础知识",
+    "question": "配置 Shadowsocks 链接时 URL Base64 编码该如何理解？",
+    "primaryKeyword": "SS节点链接编码科普",
+    "supportingKeywords": [
+      "SS节点链接编码科普",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】Base64包裹密码加密方式，便于客户端一键导入。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "ss-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#ss-10",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-043",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan 网络协议的核心伪装原理是怎样的？",
+    "primaryKeyword": "Trojan协议工作原理",
+    "supportingKeywords": [
+      "Trojan协议工作原理",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】将网络流量完全伪装为标准的 HTTPS 网页访问。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-01",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-044",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan 协议需要依赖合法的 TLS 证书吗？",
+    "primaryKeyword": "Trojan证书依赖解析",
+    "supportingKeywords": [
+      "Trojan证书依赖解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】必须具备受信任机构签发的域名证书才能握手。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-02",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-045",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "为什么说 Trojan 协议对抗流量指纹识别相对更强？",
+    "primaryKeyword": "Trojan抗特征能力评估",
+    "supportingKeywords": [
+      "Trojan抗特征能力评估",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】没有多余握手特征，完全复用标准 TLS 协议栈。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-03",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-046",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "在各平台客户端中 Trojan 协议的兼容现状如何？",
+    "primaryKeyword": "Trojan多端兼容现状",
+    "supportingKeywords": [
+      "Trojan多端兼容现状",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】Clash、Stash、sing-box 均原生稳定支持。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-04",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-047",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan-Go 相比原版 Trojan 增加了哪些扩展功能？",
+    "primaryKeyword": "Trojan-Go扩展特性",
+    "supportingKeywords": [
+      "Trojan-Go扩展特性",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】增加了多路复用与 WebSockets 路由支持。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-05",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-048",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan 节点握手失败最常见的证书报错有哪些？",
+    "primaryKeyword": "Trojan证书报错排障",
+    "supportingKeywords": [
+      "Trojan证书报错排障",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】域名不匹配、证书过期或系统根证书不全。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-06",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-049",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "高延迟网络环境下 Trojan 的连接建立性能怎么样？",
+    "primaryKeyword": "Trojan网络延迟分析",
+    "supportingKeywords": [
+      "Trojan网络延迟分析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】TLS三次握手较长，适度配合多路复用可降低延迟。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-07",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-050",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "日常使用 Trojan 协议需要注意哪些客户端设置？",
+    "primaryKeyword": "Trojan日常客户端设置",
+    "supportingKeywords": [
+      "Trojan日常客户端设置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】务必开启证书安全校验，切勿跳过跳板认证。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-08",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-051",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan 节点能支持多设备同时并发长连接吗？",
+    "primaryKeyword": "Trojan多设备并发支持",
+    "supportingKeywords": [
+      "Trojan多设备并发支持",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】支持多连接，性能受限于服务端线程与系统限制。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-09",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-052",
+    "category": "Trojan 网络协议、客户端与常见问题",
+    "question": "Trojan 协议适合用来传输超大文件与高清流媒体吗？",
+    "primaryKeyword": "Trojan流媒体传输表现",
+    "supportingKeywords": [
+      "Trojan流媒体传输表现",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】底层基于 TCP，专线保障下非常稳定顺畅。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "trojan-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-10",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-053",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "口语中常说的梯子和网络代理服务是同一个概念吗？",
+    "primaryKeyword": "梯子口语概念中立辨析",
+    "supportingKeywords": [
+      "梯子口语概念中立辨析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】口语俗称与正规网络中继工具所指技术本质相同。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-01",
+    "internalLink": "/faq/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-054",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "新手在接触网络梯子工具时首先应建立什么安全常识？",
+    "primaryKeyword": "新手梯子安全入门常识",
+    "supportingKeywords": [
+      "新手梯子安全入门常识",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】保护账户隐私，不访问非法网站，不传敏感凭证。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-02",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-055",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "网上搜寻所谓免费梯子存在哪些不可控的隐私隐患？",
+    "primaryKeyword": "免费网络服务风险提示",
+    "supportingKeywords": [
+      "免费网络服务风险提示",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】免费工具常插入广告、倒卖日志甚至植入恶意脚本。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-03",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-056",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "选择商业梯子服务时如何核对退款与服务协议边界？",
+    "primaryKeyword": "网络服务协议核对技巧",
+    "supportingKeywords": [
+      "网络服务协议核对技巧",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】务必先阅读服务商退款窗口期与流量消耗限制。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-04",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-057",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "为什么使用网络工具时必须严格遵守当地法律法规？",
+    "primaryKeyword": "网络工具合规使用准则",
+    "supportingKeywords": [
+      "网络工具合规使用准则",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】中立技术用于正规跨国业务，违规用途需严防。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-05",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-058",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "家庭多人共用梯子网络需要提前做哪些规则约定？",
+    "primaryKeyword": "家庭共用网络使用约定",
+    "supportingKeywords": [
+      "家庭共用网络使用约定",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】禁止下载版权种子，防止滥用导致出口IP被封。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-06",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-059",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "如何识别打着梯子幌子的钓鱼网站与诈骗应用？",
+    "primaryKeyword": "识别钓鱼网络服务应用",
+    "supportingKeywords": [
+      "识别钓鱼网络服务应用",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】核实官网域名拼写，不安装来源不明的私有描述文件。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-07",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-060",
+    "category": "梯子口语搜索、服务选择与风险提示",
+    "question": "日常网络连接中遇到梯子卡顿时应优先从哪自查？",
+    "primaryKeyword": "梯子日常卡顿快速排查",
+    "supportingKeywords": [
+      "梯子日常卡顿快速排查",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】先检查本地Wi-Fi信号，再切换备用低倍率节点。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "tizi-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-08",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-061",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "机场节点的倍率到底是什么意思？如何计算扣费？",
+    "primaryKeyword": "节点倍率计算深度科普",
+    "supportingKeywords": [
+      "节点倍率计算深度科普",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】实际扣除流量等于实际使用量乘以此倍率数值。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-01",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-062",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "香港节点和日本节点在日常使用中有哪些优劣差异？",
+    "primaryKeyword": "香港与日本节点对比",
+    "supportingKeywords": [
+      "香港与日本节点对比",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】香港物理距离近延迟低，日本出口纯净度较广。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-02",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-063",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "新加坡与美西节点适合承载哪些特定网络需求？",
+    "primaryKeyword": "新加坡与美西节点定位",
+    "supportingKeywords": [
+      "新加坡与美西节点定位",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】新加坡东南亚业务首选，美西适合跨国长连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-03",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-064",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "IEPL 与 IPLC 专线相比直连公网中继优势在哪里？",
+    "primaryKeyword": "IEPL与IPLC专线科普",
+    "supportingKeywords": [
+      "IEPL与IPLC专线科普",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】端到端内网传输，不过公共骨干网，晚高峰不抖动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-04",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-065",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "为什么节点测速显示延迟很低但实际打开网页很慢？",
+    "primaryKeyword": "低延迟打开网页慢排障",
+    "supportingKeywords": [
+      "低延迟打开网页慢排障",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】DNS解析延迟高或服务端并发队列阻塞导致慢。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-05",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-066",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "节点发生丢包率飙升的常见原因与临时避坑措施？",
+    "primaryKeyword": "节点丢包率高应对方案",
+    "supportingKeywords": [
+      "节点丢包率高应对方案",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】公网骨干波动引起，及时切换至备用机房专线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-06",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-067",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "如何给常用的核心节点建立分类标签与收藏列表？",
+    "primaryKeyword": "节点分类收藏管理方法",
+    "supportingKeywords": [
+      "节点分类收藏管理方法",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】按工作、影音、下载设立不同命名标签分组。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-07",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-068",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "不同地区的出口 IP 属性对访问部分网络服务有何影响？",
+    "primaryKeyword": "出口IP类型与风控影响",
+    "supportingKeywords": [
+      "出口IP类型与风控影响",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】原生住宅IP风控门槛低，机房广播IP易遇验证码。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-08",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-069",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "机场每天自动测速和高频测速会消耗很多自身流量吗？",
+    "primaryKeyword": "频繁测速流量损耗测算",
+    "supportingKeywords": [
+      "频繁测速流量损耗测算",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】每次单节点全开测速可能消耗几百兆真实流量。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-09",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-070",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "冷门国家节点（如阿根廷、土耳其）有什么实际价值？",
+    "primaryKeyword": "冷门地区节点实际应用",
+    "supportingKeywords": [
+      "冷门地区节点实际应用",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】适合跨国区域定价比对与特定本地化服务开发。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-10",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-071",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "为什么晚高峰期间部分平价节点延迟会明显增大？",
+    "primaryKeyword": "晚高峰节点拥堵原理解析",
+    "supportingKeywords": [
+      "晚高峰节点拥堵原理解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】公共出口带宽饱和，超卖机场必然发生排队。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-11",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-11",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-072",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "多入口单出口与单入口多出口的线路拓扑该怎么看？",
+    "primaryKeyword": "机场线路拓扑结构解析",
+    "supportingKeywords": [
+      "机场线路拓扑结构解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】多入口具备更好容灾，单点故障时能平滑漂移。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-12",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-12",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-073",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "如何利用客户端的故障转移 (Fallback) 保持连接可用？",
+    "primaryKeyword": "Fallback故障转移配置",
+    "supportingKeywords": [
+      "Fallback故障转移配置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】主节点中断时自动顺延至备用节点，体验无感。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-13",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-13",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-074",
+    "category": "节点、地区、延迟、线路和倍率",
+    "question": "节点命名中的 BGP、Anycast 分别代表什么含义？",
+    "primaryKeyword": "BGP与Anycast术语解释",
+    "supportingKeywords": [
+      "BGP与Anycast术语解释",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】BGP多线接入提升首跳速度，Anycast智能选路由。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "node-14",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#node-14",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-075",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "购买机场套餐时按月付费与按年付费哪种更稳妥？",
+    "primaryKeyword": "月付与年付决策平衡",
+    "supportingKeywords": [
+      "月付与年付决策平衡",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】新服务首推月付观察，稳定老牌可选择打折年付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-01",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-076",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "套餐内每月流量到了结算日会自动清零重置吗？",
+    "primaryKeyword": "流量重置周期规则说明",
+    "supportingKeywords": [
+      "流量重置周期规则说明",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】大多数按自然月或购买日重置，不结转到下月。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-02",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-077",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "一次性不限时流量包适合哪种特定网络使用习惯？",
+    "primaryKeyword": "不限时流量包适用画像",
+    "supportingKeywords": [
+      "不限时流量包适用画像",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】适合轻度备用、出差应急，无需每月持续扣费。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-03",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-078",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "为什么有些便宜套餐标称 1TB 却经常提前用完？",
+    "primaryKeyword": "虚标流量与隐性倍率排查",
+    "supportingKeywords": [
+      "虚标流量与隐性倍率排查",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】需核查是否误用了 2x~5x 高倍率节点产生翻倍。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-04",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-079",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "使用机场优惠码结算时遇到无效提示该怎么处理？",
+    "primaryKeyword": "优惠码无效排查指引",
+    "supportingKeywords": [
+      "优惠码无效排查指引",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】核对优惠券大小写、有效期限制及指定套餐类型。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-05",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-080",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "不同套餐档位（如轻量版与进阶版）的核心差距在哪？",
+    "primaryKeyword": "套餐档位梯级差异对比",
+    "supportingKeywords": [
+      "套餐档位梯级差异对比",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】主要在于每月流量总额、峰值速率与设备并发数。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-06",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-081",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "遇到机场临时上调价格或调整套餐规格时该怎么办？",
+    "primaryKeyword": "套餐变动应对策略建议",
+    "supportingKeywords": [
+      "套餐变动应对策略建议",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】尊重契约核查旧方案有效期，必要时平移至备选。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-07",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-082",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "如何为个人或小微工作室制定合理的月度流量预算？",
+    "primaryKeyword": "网络流量预算规划指南",
+    "supportingKeywords": [
+      "网络流量预算规划指南",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】按人均50~100GB/月预估，结合影音大户适当浮动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-08",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-083",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "机场支持的支付渠道有哪些？如何保障支付隐私？",
+    "primaryKeyword": "支付渠道与隐私安全建议",
+    "supportingKeywords": [
+      "支付渠道与隐私安全建议",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】优选正规第三方聚合支付，避免绑定敏感卡号。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-09",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-09",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-084",
+    "category": "套餐、价格、流量、付款周期和优惠码",
+    "question": "套餐快用完时如何克制消耗以支撑到重置日？",
+    "primaryKeyword": "月底流量急救节流方案",
+    "supportingKeywords": [
+      "月底流量急救节流方案",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】切断流媒体4K画质，关闭云盘大文件自动同步。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "plan-10",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#plan-10",
+    "internalLink": "/traffic-nodes/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-085",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "多台设备同时使用同一个订阅链接会有冲突吗？",
+    "primaryKeyword": "多设备同订阅冲突解析",
+    "supportingKeywords": [
+      "多设备同订阅冲突解析",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】只要未超过服务商并发限制，完全可同时在线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-01",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-086",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "家庭路由器上部署科学网络与单机客户端如何配合？",
+    "primaryKeyword": "路由器网关与单机协同",
+    "supportingKeywords": [
+      "路由器网关与单机协同",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】路由器全局分流，单机客户端针对性定制微调。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-02",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-087",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "iPhone 与 Mac 之间如何通过 iCloud 同步代理规则？",
+    "primaryKeyword": "苹果生态规则多端同步",
+    "supportingKeywords": [
+      "苹果生态规则多端同步",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】使用支持 iCloud 云同步的客户端实现多端配置互通。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-03",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-088",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "Android 系统后台经常杀掉客户端进程该如何常驻？",
+    "primaryKeyword": "安卓后台保活配置步骤",
+    "supportingKeywords": [
+      "安卓后台保活配置步骤",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】关闭电池深度优化，锁定任务卡片并开启自启动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-04",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-089",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "如何在 Windows 与 Linux 双系统之间复用订阅数据？",
+    "primaryKeyword": "双系统订阅配置复用",
+    "supportingKeywords": [
+      "双系统订阅配置复用",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】将订阅链接导入跨平台内核或提取通用节点uri。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-05",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-090",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "iPad 作为外接第二屏幕时如何保持代理网络同步？",
+    "primaryKeyword": "iPad设备网络协同配置",
+    "supportingKeywords": [
+      "iPad设备网络协同配置",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】保持Wi-Fi局域网与分流规则一致，确保长连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-06",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-091",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "局域网共享代理 (Allow LAN) 适合哪些应用场景？",
+    "primaryKeyword": "局域网共享代理实战",
+    "supportingKeywords": [
+      "局域网共享代理实战",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】为无法安装客户端的电视机、游戏机提供连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-07",
+    "internalLink": "/multi-device/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-092",
+    "category": "多设备、订阅导入、客户端和系统兼容",
+    "question": "换新手机或新电脑时如何快速迁移全套网络配置？",
+    "primaryKeyword": "换机网络配置一键迁移",
+    "supportingKeywords": [
+      "换机网络配置一键迁移",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】利用客户端导出备份配置包或直接重导订阅url。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "device-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#device-08",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-093",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "节点全部超时显示红点无法连接该按什么顺序自查？",
+    "primaryKeyword": "全节点超时故障自查五步",
+    "supportingKeywords": [
+      "全节点超时故障自查五步",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】查本地网络是否通、订阅是否到期、核心配置是否错。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-01",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-01",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-094",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "浏览器能正常上网但部分系统软件无法联网怎么解决？",
+    "primaryKeyword": "系统软件不走代理排障",
+    "supportingKeywords": [
+      "系统软件不走代理排障",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】开启客户端 TUN 虚拟网卡模式接管非网页流量。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-02",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-02",
+    "internalLink": "/client-tips/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-095",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "如何判断当前网络连接是否真正做到了隐私加密？",
+    "primaryKeyword": "网络加密有效性核实",
+    "supportingKeywords": [
+      "网络加密有效性核实",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】检查传输协议握手及远端出口IP是否与节点匹配。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-03",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-03",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-096",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "购买机场服务前应该重点核对的四条关键信息是什么？",
+    "primaryKeyword": "购买前四项必查清单",
+    "supportingKeywords": [
+      "购买前四项必查清单",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】查退款政策、设备并发数、流量重置日及优惠码。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-04",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-04",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-097",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "账号密码不小心忘记或注册邮箱无法使用怎么办？",
+    "primaryKeyword": "账户凭证丢失应急找回",
+    "supportingKeywords": [
+      "账户凭证丢失应急找回",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】联系官方在线客服或工单并提供最近支付交易凭据。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-05",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-05",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-098",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "服务商遭遇不可抗力维护时如何获取最新通知动态？",
+    "primaryKeyword": "服务维护公告获取途径",
+    "supportingKeywords": [
+      "服务维护公告获取途径",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】收藏服务商官方通知频道并核对备用官方入口。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-06",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-06",
+    "internalLink": "/subscription-management/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-099",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "使用机场网络是否意味着可以进行匿名或敏感行为？",
+    "primaryKeyword": "网络工具匿名性边界警示",
+    "supportingKeywords": [
+      "网络工具匿名性边界警示",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】绝非绝对匿名，合规守法是持续使用唯一底线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-07",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-07",
+    "internalLink": "/safe-use/",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "id": "faq-100",
+    "category": "故障排查、退款、隐私、安全与购买前须知",
+    "question": "遇到不满意想要申请退款时有哪些通用的注意事项？",
+    "primaryKeyword": "服务退款沟通通用规范",
+    "supportingKeywords": [
+      "服务退款沟通通用规范",
+      "机场使用技巧",
+      "日常维护"
+    ],
+    "answer": "【建议】在规定窗口期内理性陈述技术故障与诉求。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
+    "slug": "safe-08",
+    "canonicalTarget": "https://jichangplus.xyz/faq/#safe-08",
+    "internalLink": "/service/",
+    "lastChecked": "2026-09-23"
+  }
+]

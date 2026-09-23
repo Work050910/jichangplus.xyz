@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="breadcrumbs-bar">
+  <div class="container">
+    <ul class="breadcrumbs-list">
+      <li><a href="/">首页</a></li>
+      {{ if .Params.categories }}
+      <li><a href="/{{ .Section }}/">{{ index .Params.categories 0 }}</a></li>
+      {{ end }}
+      <li>{{ .Title }}</li>
+    </ul>
+  </div>
+</div>
+
+<article class="article-page">
+  <div class="container article-container">
+    <header class="article-header">
+      {{ if .Params.categories }}
+      <div class="article-category">{{ index .Params.categories 0 }}</div>
+      {{ end }}
+      <h1 class="article-title">{{ .Title }}</h1>
+      <div class="article-meta">
+        <span>作者：{{ .Params.author | default "JichangPlus 编辑团队" }}</span>
+        <span>更新时间：{{ .Lastmod.Format "2006-01-02" }}</span>
+        <span>字数：约 {{ .Params.bodyCharCount | default 900 }} 字</span>
+      </div>
+    </header>
+
+    {{ if .Params.series }}
+    <div class="series-box">
+      <div class="series-box-title">所属系列：{{ index .Params.series 0 }}（第 {{ .Params.seriesPart }} / {{ .Params.seriesTotal }} 篇）</div>
+      <div>本系列旨在系统建立网络工具日常管理与进阶技巧，建议按顺序阅读。</div>
+    </div>
+    {{ end }}
+
+    <div class="toc-box">
+      <div class="toc-title">目录导航</div>
+      {{ .TableOfContents }}
+    </div>
+
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    <div class="in-article-cta">
+      <h4>寻找经过核验的稳定网络方案？</h4>
+      <p>按你的使用习惯了解适配订阅方案，避免盲目尝试与反复折腾。</p>
+      <a href="/service/" class="btn-primary">查看设备适配与服务说明</a>
+    </div>
+
+    <div class="post-nav">
+      <div class="post-nav-item">
+        <div class="post-nav-label">上一篇</div>
+        <div class="post-nav-title"><a href="/{{ .Section }}/">返回【{{ .Section }}】专栏目录</a></div>
+      </div>
+      <div class="post-nav-item" style="text-align: right;">
+        <div class="post-nav-label">下一篇</div>
+        <div class="post-nav-title"><a href="/faq/">查阅【常见问题】解答中心</a></div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

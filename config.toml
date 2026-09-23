@@ -1,0 +1,37 @@
+baseURL = "https://jichangplus.xyz/"
+languageCode = "zh-CN"
+title = "JichangPlus 机场加｜机场使用技巧与进阶管理教程"
+theme = "cleanwhite"
+hasCJKLanguage = true
+paginate = 20
+enableRobotsTXT = true
+
+[params]
+  brandName = "JichangPlus 机场加"
+  domain = "https://jichangplus.xyz"
+  description = "JichangPlus 机场加面向已有基础的中文读者，系统提供机场进阶教程、订阅管理、多设备协同、流量规划与客户端使用技巧，帮助建立清晰有条理的日常网络工具使用习惯。"
+  keywords = "机场使用技巧, 机场进阶教程, 机场订阅管理, 机场多设备使用, 机场流量管理, JichangPlus 机场加"
+  heroSubtitle = "面向已有基础的中文读者，系统提供当前年份机场进阶教程、订阅管理、多设备协同、流量规划与客户端使用技巧，建立条理清晰、安全稳定的日常网络使用习惯。"
+  footerText = "本站专注机场进阶教程、订阅与流量管理、多设备协同使用与客户端经验分享，持续输出清晰条理的系列教程与实用检查清单，为注重效率与安全的用户提供可靠参考。"
+  footerCompliance = "本站所有内容仅用于网络连接优化与正常技术交流，请遵守所在地区法律法规及服务条款。服务数据均带核验时间，具体套餐以各平台当前结算页为准。"
+  author = "JichangPlus 编辑团队"
+  since = 2026
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false

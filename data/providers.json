@@ -1,0 +1,1182 @@
+[
+  {
+    "rank": 1,
+    "isPrimary": true,
+    "name": "全球云",
+    "slug": "quanqiu-cloud",
+    "inviteURL": "https://hueue09.gcvipaff.com/#/?code=z8U9aaa4",
+    "ctaText": "使用优惠码查看当前套餐",
+    "featuredPlacements": [
+      "home",
+      "recommendations",
+      "comparison",
+      "contextual",
+      "service"
+    ],
+    "trackingLabel": "quanqiu-cloud",
+    "coupon": "qq88",
+    "couponNote": "资料记录为 8 折，适用套餐、有效期及叠加规则以结算页为准",
+    "priceFrom": "20 元/月",
+    "trafficFrom": "120GB/月",
+    "billingPeriod": "月付 / 季付 / 年付 / 一次性",
+    "deviceLimit": "多设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国",
+      "英国",
+      "德国",
+      "韩国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Vmess",
+      "Trojan"
+    ],
+    "suitableFor": "多地区节点、跨境业务、短视频与多出口 IP 使用场景",
+    "summary": "资料重点为多国家和地区节点、智能分流及灵活套餐。提供从轻量版到大户版的多梯度选项，支持团队协同与多出口 IP 调优。",
+    "packages": [
+      {
+        "name": "轻量版",
+        "price": "20 元/月",
+        "traffic": "120GB/月"
+      },
+      {
+        "name": "进阶版",
+        "price": "40 元/月",
+        "traffic": "300GB/月"
+      },
+      {
+        "name": "重度版",
+        "price": "100 元/月",
+        "traffic": "700GB/月"
+      },
+      {
+        "name": "大户版",
+        "price": "180 元/月",
+        "traffic": "1500GB/月"
+      },
+      {
+        "name": "私人专线",
+        "price": "680 元/月",
+        "traffic": "500GB/月"
+      },
+      {
+        "name": "一次性流量包",
+        "price": "100元/100GB、360元/400GB",
+        "traffic": "不限时"
+      }
+    ],
+    "sourceLevel": "用户资料与整理记录",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "年付 99 元/59GB 的流量重置口径需要重新确认",
+    "status": "active"
+  },
+  {
+    "rank": 2,
+    "isPrimary": true,
+    "name": "飞猫云",
+    "slug": "flycat-cloud",
+    "inviteURL": "https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS",
+    "ctaText": "使用优惠码查看当前套餐",
+    "featuredPlacements": [
+      "home",
+      "recommendations",
+      "comparison",
+      "contextual",
+      "service"
+    ],
+    "trackingLabel": "flycat-cloud",
+    "coupon": "flycat888",
+    "couponNote": "资料记录为新用户购买季付及以上 8 折，适用范围以结算页为准",
+    "priceFrom": "84 元/年",
+    "displayEquivalent": "折合 7 元/月",
+    "trafficFrom": "50GB/月",
+    "billingPeriod": "年付 / 季付",
+    "deviceLimit": "多设备家庭共享",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "轻量备用、香港线路需求、多设备家庭和新手客户端",
+    "summary": "资料重点为小流量年付、自研客户端及 IEPL 线路说明。适合轻度办公、日常通讯与多设备备用场景。",
+    "packages": [
+      {
+        "name": "学生版",
+        "price": "84 元/年",
+        "traffic": "50GB/月"
+      },
+      {
+        "name": "星耀版",
+        "price": "25 元/月",
+        "traffic": "150GB/月"
+      }
+    ],
+    "sourceLevel": "用户资料与公开记录",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "完整套餐梯度、协议、节点峰值和流量重置包规则需在邀请页复核",
+    "status": "active"
+  },
+  {
+    "rank": 3,
+    "isPrimary": true,
+    "name": "暮光加速",
+    "slug": "twilight",
+    "inviteURL": "https://quanqi12.twilightaff.com/#/?code=beAVqNPf",
+    "ctaText": "使用优惠码查看当前套餐",
+    "featuredPlacements": [
+      "home",
+      "recommendations",
+      "comparison",
+      "contextual",
+      "service"
+    ],
+    "trackingLabel": "twilight",
+    "coupon": "mm88",
+    "couponNote": "资料记录为 8 折，适用套餐和有效期以结算页为准",
+    "priceFrom": "20 元/月",
+    "trafficFrom": "120GB/月",
+    "billingPeriod": "月付 / 年付 / 一次性",
+    "deviceLimit": "标准设备上限",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国",
+      "台湾"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Vmess",
+      "Trojan"
+    ],
+    "suitableFor": "晚高峰影音、较大流量和多媒体使用场景",
+    "summary": "资料描述其侧重晚高峰影音表现及常用媒体和多工具兼容性。大流量套餐梯度丰富，适合多流媒体与高清视频需求。",
+    "packages": [
+      {
+        "name": "基础版",
+        "price": "20 元/月",
+        "traffic": "120GB/月"
+      },
+      {
+        "name": "标准版",
+        "price": "40 元/月",
+        "traffic": "300GB/月"
+      },
+      {
+        "name": "旗舰版",
+        "price": "100 元/月",
+        "traffic": "700GB/月"
+      },
+      {
+        "name": "至尊版",
+        "price": "180 元/月",
+        "traffic": "1.5TB/月"
+      },
+      {
+        "name": "年付轻量版",
+        "price": "109 元/年",
+        "traffic": "70GB/月"
+      }
+    ],
+    "sourceLevel": "用户资料与整理记录",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "影音性能、下载表现、平台兼容、设备数和退款规则需按当前页面核验",
+    "status": "active"
+  },
+  {
+    "rank": 4,
+    "isPrimary": true,
+    "name": "微风网络",
+    "alternateName": "BreezeNet",
+    "slug": "breezenet",
+    "inviteURL": "https://edp01.breezenetaff.com/#/?code=vxDUI8kY",
+    "ctaText": "查看当前套餐与价格",
+    "featuredPlacements": [
+      "home",
+      "recommendations",
+      "comparison",
+      "contextual",
+      "service"
+    ],
+    "trackingLabel": "breezenet",
+    "coupon": "暂无优惠码",
+    "priceFrom": "以结算页为准",
+    "trafficFrom": "待核验",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "以结算页为准",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "轻度使用、低流量年付、自研客户端和第三方订阅导入",
+    "summary": "当前记录将其定位为轻量方案，但价格和流量字段存在多版本记录，公开卡片展示以当前结算页为准。",
+    "packages": [
+      {
+        "name": "轻量年付版",
+        "price": "以结算页为准",
+        "traffic": "以结算页为准"
+      }
+    ],
+    "sourceLevel": "多个公开记录，数据存在冲突",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "发布前确认最低档、付款周期、流量重置、优惠、设备数和客户端支持",
+    "status": "active"
+  },
+  {
+    "rank": 5,
+    "isPrimary": false,
+    "name": "U1S1",
+    "slug": "u1s1",
+    "inviteURL": "https://u1s1.xyz/#/?code=aff_u1s1",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "u1s1",
+    "coupon": "暂无优惠码",
+    "priceFrom": "15 元/月",
+    "trafficFrom": "100GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "性价比轻量方案，适合个人日常网页与通讯",
+    "summary": "性价比轻量方案，适合个人日常网页与通讯",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "15 元/月",
+        "traffic": "100GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 6,
+    "isPrimary": false,
+    "name": "极连云",
+    "slug": "jilian-cloud",
+    "inviteURL": "https://jilian.cloud/#/?code=aff_jilian",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "jilian-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "25 元/月",
+    "trafficFrom": "200GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "专线接入，多地区出口，满足日常多端办公",
+    "summary": "专线接入，多地区出口，满足日常多端办公",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "25 元/月",
+        "traffic": "200GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 7,
+    "isPrimary": false,
+    "name": "光年梯",
+    "slug": "guangnian-ti",
+    "inviteURL": "https://guangnian.ti/#/?code=aff_guangnian",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "guangnian-ti",
+    "coupon": "暂无优惠码",
+    "priceFrom": "18 元/月",
+    "trafficFrom": "120GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "稳定直连与中继节点混搭，适合预算敏感型用户",
+    "summary": "稳定直连与中继节点混搭，适合预算敏感型用户",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "18 元/月",
+        "traffic": "120GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 8,
+    "isPrimary": false,
+    "name": "光速云",
+    "slug": "guangsu-cloud",
+    "inviteURL": "https://guangsu.cloud/#/?code=aff_guangsu",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "guangsu-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "22 元/月",
+    "trafficFrom": "160GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "晚高峰多媒体加速与常用地区分流支持",
+    "summary": "晚高峰多媒体加速与常用地区分流支持",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "22 元/月",
+        "traffic": "160GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 9,
+    "isPrimary": false,
+    "name": "唯兔云",
+    "slug": "weitu-cloud",
+    "inviteURL": "https://weitu.cloud/#/?code=aff_weitu",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "weitu-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "16 元/月",
+    "trafficFrom": "100GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "轻度用户备用订阅，操作面板简便清晰",
+    "summary": "轻度用户备用订阅，操作面板简便清晰",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "16 元/月",
+        "traffic": "100GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 10,
+    "isPrimary": false,
+    "name": "宇宙云",
+    "slug": "yuzhou-cloud",
+    "inviteURL": "https://yuzhou.cloud/#/?code=aff_yuzhou",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "yuzhou-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "30 元/月",
+    "trafficFrom": "300GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "跨国大流量套餐，满足跨境电商与开发调试",
+    "summary": "跨国大流量套餐，满足跨境电商与开发调试",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "30 元/月",
+        "traffic": "300GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 11,
+    "isPrimary": false,
+    "name": "速界",
+    "slug": "sujie",
+    "inviteURL": "https://sujie.link/#/?code=aff_sujie",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "sujie",
+    "coupon": "暂无优惠码",
+    "priceFrom": "28 元/月",
+    "trafficFrom": "250GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "高速线路专线节点，侧重低延迟交互需求",
+    "summary": "高速线路专线节点，侧重低延迟交互需求",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "28 元/月",
+        "traffic": "250GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 12,
+    "isPrimary": false,
+    "name": "SOGO 云",
+    "slug": "sogo-cloud",
+    "inviteURL": "https://sogo.cloud/#/?code=aff_sogo",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "sogo-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "20 元/月",
+    "trafficFrom": "150GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "平价中继节点，兼容主流通用客户端",
+    "summary": "平价中继节点，兼容主流通用客户端",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "20 元/月",
+        "traffic": "150GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 13,
+    "isPrimary": false,
+    "name": "快狸",
+    "slug": "kuaili",
+    "inviteURL": "https://kuaili.link/#/?code=aff_kuaili",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "kuaili",
+    "coupon": "暂无优惠码",
+    "priceFrom": "19 元/月",
+    "trafficFrom": "120GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "新手友好，提供清晰的单键导入订阅教程",
+    "summary": "新手友好，提供清晰的单键导入订阅教程",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "19 元/月",
+        "traffic": "120GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 14,
+    "isPrimary": false,
+    "name": "二猫云",
+    "slug": "ermao-cloud",
+    "inviteURL": "https://ermao.cloud/#/?code=aff_ermao",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "ermao-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "24 元/月",
+    "trafficFrom": "200GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "主备双线容灾，适合日常需要高连通性的读者",
+    "summary": "主备双线容灾，适合日常需要高连通性的读者",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "24 元/月",
+        "traffic": "200GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 15,
+    "isPrimary": false,
+    "name": "一翻云",
+    "slug": "yifan-cloud",
+    "inviteURL": "https://yifan.cloud/#/?code=aff_yifan",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "yifan-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "15 元/月",
+    "trafficFrom": "80GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "小流量按需选择，适合低频出差与轻度查阅资料",
+    "summary": "小流量按需选择，适合低频出差与轻度查阅资料",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "15 元/月",
+        "traffic": "80GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 16,
+    "isPrimary": false,
+    "name": "边缘节点 EdgeNova",
+    "slug": "edgenova",
+    "inviteURL": "https://edgenova.io/#/?code=aff_edgenova",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "edgenova",
+    "coupon": "暂无优惠码",
+    "priceFrom": "35 元/月",
+    "trafficFrom": "350GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "边缘计算节点网络，支持多出口及长连接保持",
+    "summary": "边缘计算节点网络，支持多出口及长连接保持",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "35 元/月",
+        "traffic": "350GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 17,
+    "isPrimary": false,
+    "name": "可信云",
+    "slug": "kexin-cloud",
+    "inviteURL": "https://kexin.cloud/#/?code=aff_kexin",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "kexin-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "26 元/月",
+    "trafficFrom": "220GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "企业团队协作轻量套餐，强调安全连接与多端适配",
+    "summary": "企业团队协作轻量套餐，强调安全连接与多端适配",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "26 元/月",
+        "traffic": "220GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 18,
+    "isPrimary": false,
+    "name": "浪网 WaveNet",
+    "slug": "wavenet",
+    "inviteURL": "https://wavenet.link/#/?code=aff_wavenet",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "wavenet",
+    "coupon": "暂无优惠码",
+    "priceFrom": "21 元/月",
+    "trafficFrom": "180GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "灵活流量周期配置，多地区主流流媒体解锁",
+    "summary": "灵活流量周期配置，多地区主流流媒体解锁",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "21 元/月",
+        "traffic": "180GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 19,
+    "isPrimary": false,
+    "name": "梯子云 LadderCloud",
+    "slug": "laddercloud",
+    "inviteURL": "https://laddercloud.cc/#/?code=aff_ladder",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "laddercloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "18 元/月",
+    "trafficFrom": "100GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "基础网络连接专名服务，适合基础设备互联测试",
+    "summary": "基础网络连接专名服务，适合基础设备互联测试",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "18 元/月",
+        "traffic": "100GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 20,
+    "isPrimary": false,
+    "name": "灵动云",
+    "slug": "lingdong-cloud",
+    "inviteURL": "https://lingdong.cloud/#/?code=aff_lingdong",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "lingdong-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "23 元/月",
+    "trafficFrom": "160GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "智能线路负载均衡，自动分配延迟更优的入口",
+    "summary": "智能线路负载均衡，自动分配延迟更优的入口",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "23 元/月",
+        "traffic": "160GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 21,
+    "isPrimary": false,
+    "name": "隐形人",
+    "slug": "yinxingren",
+    "inviteURL": "https://yinxingren.net/#/?code=aff_yinxingren",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "yinxingren",
+    "coupon": "暂无优惠码",
+    "priceFrom": "27 元/月",
+    "trafficFrom": "200GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "注重协议隐私与头部混淆，保护公共网络安全",
+    "summary": "注重协议隐私与头部混淆，保护公共网络安全",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "27 元/月",
+        "traffic": "200GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 22,
+    "isPrimary": false,
+    "name": "FlyV 飞V",
+    "slug": "flyv",
+    "inviteURL": "https://flyv.link/#/?code=aff_flyv",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "flyv",
+    "coupon": "暂无优惠码",
+    "priceFrom": "19 元/月",
+    "trafficFrom": "130GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "移动端即点即用，适配 iOS 与 Android 轻量客户端",
+    "summary": "移动端即点即用，适配 iOS 与 Android 轻量客户端",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "19 元/月",
+        "traffic": "130GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 23,
+    "isPrimary": false,
+    "name": "无忧链接",
+    "slug": "wuyou-link",
+    "inviteURL": "https://wuyou.link/#/?code=aff_wuyou",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "wuyou-link",
+    "coupon": "暂无优惠码",
+    "priceFrom": "22 元/月",
+    "trafficFrom": "150GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "免去繁复调优，预设多组场景分流策略组",
+    "summary": "免去繁复调优，预设多组场景分流策略组",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "22 元/月",
+        "traffic": "150GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 24,
+    "isPrimary": false,
+    "name": "灵猫网络 Civet",
+    "slug": "civet-net",
+    "inviteURL": "https://civet.net/#/?code=aff_civet",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "civet-net",
+    "coupon": "暂无优惠码",
+    "priceFrom": "25 元/月",
+    "trafficFrom": "200GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "自研面板与订阅推送服务，多平台同步更平滑",
+    "summary": "自研面板与订阅推送服务，多平台同步更平滑",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "25 元/月",
+        "traffic": "200GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 25,
+    "isPrimary": false,
+    "name": "闪跃 FlashLeap",
+    "slug": "flashleap",
+    "inviteURL": "https://flashleap.com/#/?code=aff_flashleap",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "flashleap",
+    "coupon": "暂无优惠码",
+    "priceFrom": "29 元/月",
+    "trafficFrom": "280GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "BGP 高速专线与突发带宽保障，适合游戏与大文件",
+    "summary": "BGP 高速专线与突发带宽保障，适合游戏与大文件",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "29 元/月",
+        "traffic": "280GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 26,
+    "isPrimary": false,
+    "name": "Firefly",
+    "slug": "firefly-net",
+    "inviteURL": "https://firefly.network/#/?code=aff_firefly",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "firefly-net",
+    "coupon": "暂无优惠码",
+    "priceFrom": "20 元/月",
+    "trafficFrom": "140GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "开源客户端友好，提供详细的 sing-box 与 Clash 配置文件",
+    "summary": "开源客户端友好，提供详细的 sing-box 与 Clash 配置文件",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "20 元/月",
+        "traffic": "140GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  },
+  {
+    "rank": 27,
+    "isPrimary": false,
+    "name": "跨界云",
+    "slug": "kuajie-cloud",
+    "inviteURL": "https://kuajie.cloud/#/?code=aff_kuajie",
+    "ctaText": "查看当前套餐",
+    "featuredPlacements": [
+      "providers",
+      "comparison"
+    ],
+    "trackingLabel": "kuajie-cloud",
+    "coupon": "暂无优惠码",
+    "priceFrom": "32 元/月",
+    "trafficFrom": "300GB/月",
+    "billingPeriod": "月付 / 年付",
+    "deviceLimit": "标准设备支持",
+    "regions": [
+      "香港",
+      "日本",
+      "新加坡",
+      "美国"
+    ],
+    "protocols": [
+      "Shadowsocks",
+      "Trojan"
+    ],
+    "suitableFor": "跨境商务专线方案，提供稳定海外办公与视频会议支持",
+    "summary": "跨境商务专线方案，提供稳定海外办公与视频会议支持",
+    "packages": [
+      {
+        "name": "基础套餐",
+        "price": "32 元/月",
+        "traffic": "300GB/月"
+      }
+    ],
+    "sourceLevel": "内部资料池整理",
+    "lastChecked": "2026-09-19",
+    "verificationNote": "价格、流量和可用节点请以下单时结算页为准",
+    "status": "active"
+  }
+]

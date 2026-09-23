@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="breadcrumbs-bar">
+  <div class="container">
+    <ul class="breadcrumbs-list">
+      <li><a href="/">首页</a></li>
+      <li>{{ .Title }}</li>
+    </ul>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ .Title }}</h1>
+      <p class="section-desc">{{ .Description }}</p>
+    </div>
+
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    <div class="cards-grid" style="margin-top: 30px;">
+      {{ range .Pages }}
+      <div class="article-card">
+        <div class="article-card-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+        <div class="article-card-summary">
+          {{ .Description }}
+        </div>
+        <div class="article-card-meta">
+          <span>{{ .Date.Format "2006-01-02" }}</span>
+          <span>字数：约 {{ .Params.bodyCharCount | default 900 }} 字</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
