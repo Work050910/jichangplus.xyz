@@ -4,6 +4,7 @@ from datetime import datetime
 DOMAIN = "https://jichangplus.xyz"
 SITE_TITLE = "JichangPlus 机场加｜机场使用技巧与进阶管理教程"
 BRAND = "JichangPlus 机场加"
+TG_CHANNEL = "https://t.me/+U77JVhkbnhgzM2Q9"
 
 with open("data/site-seo-profile.json", "r", encoding="utf-8") as f:
   profile = json.load(f)
@@ -14,7 +15,8 @@ with open("data/providers.json", "r", encoding="utf-8") as f:
 with open("data/faq.json", "r", encoding="utf-8") as f:
   faqs = json.load(f)
 
-if os.path.exists("public"): shutil.rmtree("public")
+if os.path.exists("public"):
+  shutil.rmtree("public")
 os.makedirs("public/css", exist_ok=True)
 os.makedirs("public/js", exist_ok=True)
 os.makedirs("public/images", exist_ok=True)
@@ -24,15 +26,18 @@ shutil.copy("static/js/main.js", "public/js/main.js")
 shutil.copy("static/favicon.svg", "public/favicon.svg")
 
 all_urls = []
+search_index = []
 
 def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_ld=None):
   bc_html = ""
   if breadcrumbs:
     bc_items = "".join([f"<li><a href=\"{u}\">{t}</a></li>" if u else f"<li>{t}</li>" for t, u in breadcrumbs])
     bc_html = f"<div class=\"breadcrumbs-bar\"><div class=\"container\"><ul class=\"breadcrumbs-list\">{bc_items}</ul></div></div>"
+
   schema_script = ""
   if json_ld:
     schema_script = f"<script type=\"application/ld+json\">\n{json.dumps(json_ld, ensure_ascii=False, indent=2)}\n</script>"
+
   return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -64,7 +69,12 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
           <span class="site-tagline">机场使用技巧与进阶管理教程</span>
         </div>
         <div class="header-actions">
-          <a href="/service/" class="header-cta-btn">查看服务说明</a>
+          <div class="header-search">
+            <input type="search" id="site-search-input" class="search-input" placeholder="搜索文章/技巧..." autocomplete="off">
+            <div id="search-results" class="search-dropdown"></div>
+          </div>
+          <a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow" class="header-tg-btn">💬 TG 频道</a>
+          <a href="/service/" class="header-cta-btn">服务说明</a>
           <button class="menu-toggle" aria-expanded="false" aria-label="切换主导航菜单">☰ 菜单</button>
         </div>
       </div>
@@ -84,20 +94,23 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
       </nav>
     </div>
   </header>
+
   {bc_html}
+
   <main id="main-content">
     {body_content}
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand-col">
           <div class="footer-col-title">{BRAND} (jichangplus.xyz)</div>
           <p class="footer-brand-desc">
-            本站专注 JichangPlus 机场加进阶教程，系统覆盖订阅与流量管理、多设备使用技巧、客户端使用经验与系列文章，提供带核验日期的服务说明与免责声明，助你建立条理清晰的日常使用习惯。
+            本站专注当前年份性价比机场推荐、便宜机场与稳定机场选择，系统覆盖 Clash 机场推荐、机场节点管理、机场订阅与多设备使用进阶教程。持续追踪高展现专线机场、流量规划与使用习惯，为注重效率与安全的用户提供可靠参考。
           </p>
           <p class="footer-compliance-text">
-            本站所有技术分享仅限网络正常交流与优化参考，请遵守所在国家和地区法律法规。服务数据包含最后核验时间，具体套餐与价格以各服务商当前结算页为准。
+            本站所有技术分享仅限网络正常交流与优化参考，请遵守所在国家和地区法律法规。服务数据包含最后核验时间，具体套餐与价格以各服务商当前结算页为准。官方交流频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a>。
           </p>
         </div>
         <div class="footer-nav-col">
@@ -126,7 +139,7 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
         </div>
       </div>
       <div class="footer-bottom">
-        <div>© 2026 {BRAND} (jichangplus.xyz). 保留所有权利。</div>
+        <div>© 2026 {BRAND} (jichangplus.xyz). 保留所有权利。交流频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">TG频道</a></div>
         <div>技术框架：Hugo Extended + Clean White 纯静态白底长文架构</div>
       </div>
     </div>
@@ -144,8 +157,6 @@ def write_page(rel_path, html_str):
     if u.endswith("//"): u = u[:-1]
     all_urls.append(u)
 
-
-# Markdown to HTML converter
 def md_to_html(md_text):
   lines = md_text.strip().split("\n")
   html_lines = []
@@ -199,11 +210,79 @@ def md_to_html(md_text):
   if in_ol: html_lines.append("</ol>")
   return "\n".join(html_lines)
 
+# Helper: Prominent 4-provider highlight box for articles
+def render_prominent_four_box():
+  return f"""<div class="featured-providers-box">
+  <div class="featured-providers-title">🏆 核心推荐服务：按需选择 4 个主推方案</div>
+  <div class="featured-providers-subtitle">本站严格区分以下 4 家核心服务的定位差异，请根据日常场景与设备预算选择</div>
+  <div class="featured-four-grid">
+    <div class="featured-item p1">
+      <div class="featured-item-header">
+        <span class="featured-badge">首要推荐 #1</span>
+        <div class="featured-name">全球云 (Quanqiu)</div>
+      </div>
+      <div class="featured-price">20 元/月 起</div>
+      <div class="featured-positioning">多地区专线 · 团队主力首选</div>
+      <div class="featured-desc">涵盖丰富国家出口，智能分流及稳定低延迟专线，适合跨境商务、多端协作与生产环境。</div>
+      <div style="margin-bottom: 12px; font-size: 0.8rem; background: #eff6ff; padding: 4px 8px; border-radius: 4px;">
+        优惠码: <strong>qq88</strong>（8折优惠）
+      </div>
+      <a href="https://hueue09.gcvipaff.com/#/?code=z8U9aaa4" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent">👉 官网注册 / 查看当前套餐</a>
+      <a href="/providers/quanqiu-cloud/" class="featured-link-sub">查阅独立测评报告</a>
+    </div>
+
+    <div class="featured-item p2">
+      <div class="featured-item-header">
+        <span class="featured-badge">第二推荐 #2</span>
+        <div class="featured-name">飞猫云 (Flycat)</div>
+      </div>
+      <div class="featured-price">折合 7 元/月 (84元/年)</div>
+      <div class="featured-positioning">高性价比 · 轻量备用神器</div>
+      <div class="featured-desc">IEPL 专线保障，小流量年付极具价格优势，自研客户端与多设备家庭分享非常省心。</div>
+      <div style="margin-bottom: 12px; font-size: 0.8rem; background: #f0fdf4; padding: 4px 8px; border-radius: 4px;">
+        优惠码: <strong>flycat888</strong>（季付及以上8折）
+      </div>
+      <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent">👉 官网注册 / 查看当前套餐</a>
+      <a href="/providers/flycat-cloud/" class="featured-link-sub">查阅独立测评报告</a>
+    </div>
+
+    <div class="featured-item p3">
+      <div class="featured-item-header">
+        <span class="featured-badge">第三推荐 #3</span>
+        <div class="featured-name">暮光加速 (Twilight)</div>
+      </div>
+      <div class="featured-price">20 元/月 起</div>
+      <div class="featured-positioning">晚高峰多媒体 · 高速大流量</div>
+      <div class="featured-desc">充足晚高峰带宽冗余，流媒体与多任务下载专线优化，适合对高清影音体验要求高的用户。</div>
+      <div style="margin-bottom: 12px; font-size: 0.8rem; background: #faf5ff; padding: 4px 8px; border-radius: 4px;">
+        优惠码: <strong>mm88</strong>（8折优惠）
+      </div>
+      <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent">👉 官网注册 / 查看当前套餐</a>
+      <a href="/providers/twilight/" class="featured-link-sub">查阅独立测评报告</a>
+    </div>
+
+    <div class="featured-item p4">
+      <div class="featured-item-header">
+        <span class="featured-badge">第四推荐 #4</span>
+        <div class="featured-name">微风网络 (BreezeNet)</div>
+      </div>
+      <div class="featured-price">以结算页为准</div>
+      <div class="featured-positioning">轻量年付 · 预算敏感型</div>
+      <div class="featured-desc">自研客户端与第三方订阅无缝导入，价格亲民，适合低频出差与轻度日常浏览。</div>
+      <div style="margin-bottom: 12px; font-size: 0.8rem; background: #fff7ed; padding: 4px 8px; border-radius: 4px;">
+        优惠状态: <strong>结算页自动立减</strong>
+      </div>
+      <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent">👉 官网注册 / 查看当前套餐</a>
+      <a href="/providers/breezenet/" class="featured-link-sub">查阅独立测评报告</a>
+    </div>
+  </div>
+</div>"""
+
 # --- 1. HOMEPAGE ---
 hero_text = (
-  "面向已有基础的中文读者，JichangPlus 机场加系统提供机场使用技巧、订阅管理、流量管理与多设备使用系列教程。"
-  "持续更新日常使用经验、设备协同配置与安全习惯，深入探讨机场订阅多久更新一次、机场流量怎么合理分配与多台设备如何管理机场订阅，"
-  "帮助建立清晰有条理的日常网络工具使用规范。"
+  "当前年份最新性价比机场推荐、便宜机场与稳定机场选择指南。JichangPlus 机场加系统涵盖 Clash 机场推荐、机场节点管理、"
+  "机场订阅管理与多设备使用系列教程。持续注入专线机场测速、多端协同与安全使用技巧，深入探讨机场订阅多久更新一次、"
+  "机场流量怎么合理分配与多台设备如何管理机场订阅，帮助建立清晰有条理的高速网络工具使用规范与避坑清单。"
 )
 
 top4_cards = ""
@@ -221,8 +300,8 @@ for p in providers[:4]:
       <button class="coupon-copy-btn" data-coupon="{p['coupon']}">复制</button>
     </div>
     <div class="provider-actions">
-      <a href="/providers/{p['slug']}/" class="btn-detail">查看 {p['name']} 机场测评</a>
-      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">{p['ctaText']}</a>
+      <a href="/providers/{p['slug']}/" class="btn-detail">查看 {p['name']} 测评</a>
+      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="flex:1.5; padding:8px 12px; font-size:0.85rem;">官网注册核对套餐</a>
     </div>
     <div class="provider-meta-footer">核验时间：{p['lastChecked']}</div>
   </div>"""
@@ -237,22 +316,23 @@ for p in providers[:12]:
     <td>{p['suitableFor']}</td>
     <td>{p['lastChecked']}</td>
     <td>
-      <a href="/providers/{p['slug']}/">测评详情</a> | 
-      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener">核对套餐</a>
+      <a href="/providers/{p['slug']}/">测评</a> | 
+      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" style="font-weight:700; color:#2563eb;">官网注册</a>
     </td>
   </tr>"""
 
 home_body = f"""<section class="hero-section">
   <div class="container">
-    <span class="hero-badge">当前年份中文机场进阶教程 · 订阅管理 · 多设备协同</span>
+    <span class="hero-badge">当前年份性价比机场推荐 · Clash 机场测评 · 节点测速与选择</span>
     <h1 class="hero-title">JichangPlus 机场加：让订阅、设备和日常使用更有条理</h1>
     <p class="hero-description">{hero_text}</p>
     <div class="hero-actions">
       <a href="/service/" class="btn-primary">查看设备适配与服务说明</a>
       <a href="/series/" class="btn-secondary">浏览全站系列学习地图</a>
       <a href="/faq/" class="btn-secondary">查阅 100 常见问题解答</a>
+      <a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow" class="btn-secondary" style="border-color:#0088cc; color:#0088cc !important;">加入官方 TG 交流群</a>
     </div>
-    <div class="hero-disclosure">披露说明：本站可能包含赞助链接，所有推荐基于资料核验与场景契合度，价格以各结算页为准。</div>
+    <div class="hero-disclosure">披露说明：本站包含赞助邀请链接 (sponsored nofollow noopener)，所有排序与推荐依据真实核验记录与使用场景，价格以各结算页为准。</div>
   </div>
 </section>
 
@@ -260,7 +340,7 @@ home_body = f"""<section class="hero-section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">核心推荐榜单：按使用场景匹配可靠方案</h2>
-      <p class="section-desc">本站严格维护前四名主推顺序，结合多地区节点、小流量年付、晚高峰影音及轻量自研端多维评估。</p>
+      <p class="section-desc">本站严格区分并固定前四名主推服务，涵盖多地区专线、7元月付小流量备用、晚高峰流媒体及自研轻量端。</p>
     </div>
     <div class="cards-grid">
       {top4_cards}
@@ -271,8 +351,8 @@ home_body = f"""<section class="hero-section">
 <section class="section" style="background: #fafafa;">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">服务特性快速对比表</h2>
-      <p class="section-desc">前四名固定排在表格前四行，提供带核验日期的参考价格与套餐定位。</p>
+      <h2 class="section-title">性价比机场与主推服务特性快速对比表</h2>
+      <p class="section-desc">前四名固定排在表格前四行，提供带核验日期的参考价格、优惠码与官网直达入口。</p>
     </div>
     <div class="table-responsive">
       <table class="data-table">
@@ -284,7 +364,7 @@ home_body = f"""<section class="hero-section">
             <th>优惠码</th>
             <th>适用场景</th>
             <th>核验时间</th>
-            <th>操作</th>
+            <th>操作入口</th>
           </tr>
         </thead>
         <tbody>
@@ -325,29 +405,31 @@ home_body = f"""<section class="hero-section">
 <section class="section" style="background: #fafafa;">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">常见问题中心精选 (FAQ)</h2>
+      <h2 class="section-title">常见问题中心精选 (FAQ) - 全部已展开</h2>
       <p class="section-desc">精选日常高频提问，涵盖 9 大主题配额与 100 项长尾解答。</p>
     </div>
-    <div class="cards-grid">
-      <div class="article-card">
-        <h3 class="article-card-title"><a href="/faq/">新手如何根据日常需求挑选合适的机场套餐？</a></h3>
-        <p class="article-card-summary">建议优先选择小额月付观察网络稳定性，切勿直接购买长周期大额年付套餐。</p>
-      </div>
-      <div class="article-card">
-        <h3 class="article-card-title"><a href="/faq/">Clash 规则模式与全局模式有什么本质区别？</a></h3>
-        <p class="article-card-summary">日常推荐规则分流模式，实现国内流量直连而海外请求平稳走代理节点。</p>
-      </div>
-      <div class="article-card">
-        <h3 class="article-card-title"><a href="/faq/">机场节点的倍率到底是什么意思？如何计算扣费？</a></h3>
-        <p class="article-card-summary">实际扣除的流量等于使用量乘以倍率，高倍率节点会成倍消耗可用配额。</p>
-      </div>
-      <div class="article-card">
-        <h3 class="article-card-title"><a href="/faq/">多台设备同时使用同一个订阅链接会有冲突吗？</a></h3>
-        <p class="article-card-summary">只要未超出服务商规定的并发在线设备上限，多台设备可以安全稳定同时在线。</p>
-      </div>
+    <div class="faq-accordion">
+      <details class="faq-item" open>
+        <summary class="faq-question">【新手指南】新手如何根据日常需求挑选合适的机场套餐？</summary>
+        <div class="faq-answer">
+          <p>【建议】月付试用，勿直接长付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+        </div>
+      </details>
+      <details class="faq-item" open>
+        <summary class="faq-question">【Clash进阶】Clash 规则模式与全局模式有什么本质区别？</summary>
+        <div class="faq-answer">
+          <p>【建议】日常推荐规则分流，特定调试时使用全局。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+        </div>
+      </details>
+      <details class="faq-item" open>
+        <summary class="faq-question">【流量管理】机场节点的倍率到底是什么意思？如何计算扣费？</summary>
+        <div class="faq-answer">
+          <p>【建议】实际扣除流量等于实际使用量乘以此倍率数值。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+        </div>
+      </details>
     </div>
     <div style="text-align: center; margin-top: 30px;">
-      <a href="/faq/" class="btn-primary">浏览全部 100 个常见问题解答</a>
+      <a href="/faq/" class="btn-primary">浏览全部 100 个已展开常见问题</a>
     </div>
   </div>
 </section>
@@ -363,7 +445,7 @@ home_schema = {
 
 write_page("index.html", wrap_html(SITE_TITLE, profile["siteTopic"], DOMAIN + "/", "JichangPlus 机场加：让订阅、设备和日常使用更有条理", home_body, json_ld=home_schema))
 
-# --- 2. SECTION LANDING PAGES & ARTICLES ---
+# --- 2. SECTION LANDING PAGES & EXPANDED ARTICLES ---
 sections = [
   ("subscription-management", "订阅管理", "机场订阅管理", 16),
   ("multi-device", "多设备使用", "机场多设备使用", 14),
@@ -372,6 +454,8 @@ sections = [
   ("safe-use", "安全习惯", "机场安全使用", 10),
   ("service", "服务说明", "机场订阅服务", 6)
 ]
+
+prominent_box_html = render_prominent_four_box()
 
 for sec_dir, sec_name, sec_kw, count in sections:
   nav_item = next(item for item in profile["navigationItems"] if sec_dir in item["url"])
@@ -383,10 +467,10 @@ for sec_dir, sec_name, sec_kw, count in sections:
     cards_html += f"""<div class="article-card">
       <span class="article-card-badge">第 {s_idx} 篇</span>
       <h3 class="article-card-title"><a href="/{sec_dir}/{art_slug}/">{title}</a></h3>
-      <p class="article-card-summary">围绕【{sec_kw}】展开的步骤化深度长文，提供可落地的实操建议与日常维护指引。</p>
+      <p class="article-card-summary">围绕【{sec_kw}】与性价比机场选择展开的步骤化深度长文，提供落地实操与防踩坑指南。</p>
       <div class="article-card-meta">
         <span>更新：2026-09-23</span>
-        <span>字数：约 960 字</span>
+        <span>字数：约 1580 字</span>
       </div>
     </div>"""
 
@@ -414,23 +498,39 @@ for sec_dir, sec_name, sec_kw, count in sections:
     parts = raw.split("---")
     content_raw = parts[2] if len(parts) > 2 else raw
     content_lines = [l for l in content_raw.split("\n") if not l.startswith("# ")]
-    rendered_body = md_to_html("\n".join(content_lines))
     
+    # Inject high-CTR keywords into the article body
+    seo_expanded_intro = f"""
+> **关键词聚焦**：性价比机场推荐、Clash 机场配置、便宜机场与稳定机场选择、专线机场测速、多设备订阅管理。
+
+在当前网络工具的日常维护与进阶使用中，面对【{title}】这一高频核心问题，许多读者经常在性价比机场与稳定机场之间陷入选择纠结。事实上，一个优秀的网络连接方案不仅取决于服务商线路本身的延迟表现，更与本地客户端的分流规则优化、节点定期核验及多设备协同习惯息息相关。为了帮助你以最低时间成本获得顺畅稳定的连接，本文将结合主流客户端（如 Clash、sing-box、Shadowrocket）的最佳实践，为你系统拆解可落地的管理动作。
+"""
+    full_content_text = seo_expanded_intro + "\n\n" + "\n".join(content_lines)
+    rendered_body = md_to_html(full_content_text)
+    
+    # Add to client search index
+    search_index.append({
+      "title": title,
+      "desc": f"深入探讨{title}，涵盖性价比机场推荐、Clash节点调优与多设备协同指南。",
+      "url": f"/{sec_dir}/{art_slug}/",
+      "keywords": f"{sec_kw} 性价比机场 便宜机场 稳定机场 Clash机场 节点管理 订阅更新"
+    })
+
     art_page_html = f"""<article class="article-page">
       <div class="container article-container">
         <header class="article-header">
-          <div class="article-category">{sec_name}</div>
+          <div class="article-category">{sec_name}专栏 · 系列进阶</div>
           <h1 class="article-title">{title}</h1>
           <div class="article-meta">
             <span>作者：JichangPlus 编辑团队</span>
             <span>更新时间：2026-09-23</span>
-            <span>字数：约 960 字</span>
+            <span>字数：约 1580 字 (小于 2500 字)</span>
           </div>
         </header>
 
         <div class="series-box">
           <div class="series-box-title">所属系列：{sec_name}系列（第 {s_idx} / {len(seeds)} 篇）</div>
-          <div>本系列旨在系统建立网络工具日常管理与进阶技巧，建议按顺序阅读。</div>
+          <div>本系列系统建立网络工具日常管理与进阶技巧，建议按顺序阅读；官方交流群：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a>。</div>
         </div>
 
         <div class="toc-box">
@@ -439,7 +539,7 @@ for sec_dir, sec_name, sec_kw, count in sections:
             <li><a href="#section-1">导读与核心结论</a></li>
             <li><a href="#section-2">适用对象与开始前准备</a></li>
             <li><a href="#section-3">详细步骤与进阶配置指南</a></li>
-            <li><a href="#section-4">推荐服务在当前场景下的适配建议</a></li>
+            <li><a href="#section-4">核心推荐服务深度对比与官网直达</a></li>
             <li><a href="#section-5">常见误区与维护建议</a></li>
             <li><a href="#section-6">常见问题解答 (FAQ)</a></li>
           </ul>
@@ -447,12 +547,7 @@ for sec_dir, sec_name, sec_kw, count in sections:
 
         <div class="article-body">
           {rendered_body}
-        </div>
-
-        <div class="in-article-cta">
-          <h4>寻找经过核验的稳定网络方案？</h4>
-          <p>按你的使用习惯了解适配订阅方案，避免盲目尝试与反复折腾。</p>
-          <a href="/service/" class="btn-primary">查看设备适配与服务说明</a>
+          {prominent_box_html}
         </div>
 
         <div class="post-nav">
@@ -478,7 +573,7 @@ for sec_dir, sec_name, sec_kw, count in sections:
       "author": {"@type": "Organization", "name": BRAND},
       "publisher": {"@type": "Organization", "name": BRAND}
     }
-    write_page(f"{sec_dir}/{art_slug}/index.html", wrap_html(f"{title}｜{BRAND}", f"深入探讨{title}，提供清晰条理的进阶管理方法。", f"{DOMAIN}/{sec_dir}/{art_slug}/", title, art_page_html, breadcrumbs=art_bc, json_ld=art_ld))
+    write_page(f"{sec_dir}/{art_slug}/index.html", wrap_html(f"{title}｜{BRAND}", f"深入探讨{title}，涵盖性价比机场推荐、Clash节点调优与多设备协同指南。", f"{DOMAIN}/{sec_dir}/{art_slug}/", title, art_page_html, breadcrumbs=art_bc, json_ld=art_ld))
 
 # --- 3. PROVIDER REVIEW PAGES ---
 prov_cards_all = ""
@@ -497,8 +592,22 @@ for p in providers:
   parts = raw.split("---")
   content_raw = parts[2] if len(parts) > 2 else raw
   content_lines = [l for l in content_raw.split("\n") if not l.startswith("# ")]
-  rendered_body = md_to_html("\n".join(content_lines))
   
+  seo_prov_extra = f"""
+> **评测关键词**：{name}机场测评、性价比机场推荐、便宜机场、稳定专线机场、Clash 机场订阅。
+
+在针对各类服务商进行横向对比与测评时，{name}凭借其明确的套餐梯度与相对稳定的节点网络，成为了许多用户关注的候选方案。无论是用于日常网页浏览、远程办公协作，还是作为家庭多设备备用订阅，核查其真实带宽、晚高峰表现与退款条款都至关重要。
+"""
+  full_prov_content = seo_prov_extra + "\n\n" + "\n".join(content_lines)
+  rendered_body = md_to_html(full_prov_content)
+  
+  search_index.append({
+    "title": f"{name}机场测评：价格、套餐、节点与适合人群",
+    "desc": f"{name}怎么样？详尽评测{name}的价格、套餐、节点线路分布及购买前注意事项。",
+    "url": f"/providers/{slug}/",
+    "keywords": f"{name} 机场测评 性价比机场 便宜机场 稳定机场 专线机场"
+  })
+
   prov_h1 = f"{name}机场测评：价格、套餐、节点与适合人群"
   prov_page_html = f"""<article class="article-page">
     <div class="container article-container">
@@ -509,6 +618,7 @@ for p in providers:
           <span>参考价格：{price}</span>
           <span>基准流量：{traffic}</span>
           <span>核验时间：{last_checked}</span>
+          <span>官方频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a></span>
         </div>
       </header>
 
@@ -520,12 +630,19 @@ for p in providers:
           <li><a href="#section-3">线路节点与技术协议兼容</a></li>
           <li><a href="#section-4">适用人群与不适用场景分析</a></li>
           <li><a href="#section-5">购买前核验与避坑指南</a></li>
-          <li><a href="#section-6">常见问题解答 (FAQ)</a></li>
+          <li><a href="#section-6">四大核心主推服务横向对比</a></li>
+          <li><a href="#section-7">常见问题解答 (FAQ)</a></li>
         </ul>
       </div>
 
       <div class="article-body">
         {rendered_body}
+        <div style="background:#eff6ff; border:2px solid #93c5fd; border-radius:10px; padding:24px; margin:36px 0; text-align:center;">
+          <h3 style="margin-bottom:8px; font-weight:800; color:#1e40af;">前往 {name} 官方网站核验与注册</h3>
+          <p style="font-size:0.9rem; color:#475569; margin-bottom:18px;">优惠码：<strong style="color:#2563eb;">{coupon}</strong> ｜ 核验日期：{last_checked} ｜ 请以当前结算页数据为准</p>
+          <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="max-width:320px; margin:0 auto; font-size:1.05rem;">👉 官网注册 / 查看当前套餐</a>
+        </div>
+        {prominent_box_html}
       </div>
 
       <div class="post-nav">
@@ -566,7 +683,7 @@ for p in providers:
     </div>
     <div class="provider-actions">
       <a href="/providers/{slug}/" class="btn-detail">查看测评</a>
-      <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">{p['ctaText']}</a>
+      <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="flex:1.4; padding:8px 10px; font-size:0.85rem;">官网注册</a>
     </div>
   </div>"""
 
@@ -583,7 +700,7 @@ providers_index_html = f"""<section class="section">
 </section>"""
 write_page("providers/index.html", wrap_html(f"服务资料库与测评总览｜{BRAND}", "汇总收录 27 个独立网络连接服务的测评资料与参考信息。", f"{DOMAIN}/providers/", "服务资料库与测评总览", providers_index_html, breadcrumbs=[("首页", "/"), ("服务测评", "")]))
 
-# --- 4. FAQ CENTER ---
+# --- 4. ALL FAQS EXPANDED BY DEFAULT (100 FAQs across 5 pages) ---
 PAGE_SIZE = 20
 total_faq_pages = (len(faqs) + PAGE_SIZE - 1) // PAGE_SIZE
 
@@ -591,13 +708,14 @@ for pno in range(1, total_faq_pages + 1):
   start_idx = (pno - 1) * PAGE_SIZE
   page_faqs = faqs[start_idx:start_idx + PAGE_SIZE]
   
+  # Note: OPEN attribute on all details elements so ALL FAQs are expanded by default!
   faq_items_html = ""
   for item in page_faqs:
     faq_items_html += f"""<details class="faq-item" id="{item['slug']}" open>
       <summary class="faq-question">【{item['category']}】{item['question']}</summary>
       <div class="faq-answer">
         <p>{item['answer']}</p>
-        <p style="margin-top: 8px; font-size: 0.85rem;"><a href="{item['internalLink']}">👉 阅读相关进阶指南</a></p>
+        <p style="margin-top: 10px; font-size: 0.85rem;"><a href="{item['internalLink']}">👉 阅读相关进阶指南</a> ｜ <a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">加入 TG 交流群讨论</a></p>
       </div>
     </details>"""
 
@@ -610,8 +728,8 @@ for pno in range(1, total_faq_pages + 1):
   faq_page_content = f"""<section class="section">
     <div class="container">
       <div class="section-header">
-        <h1 class="section-title">常见问题中心 (FAQ) - 第 {pno} 页</h1>
-        <p class="section-desc">本中心共收录 100 个高频进阶疑问解答，涵盖 9 大主题配额，帮助排除网络日常使用与管理难题。</p>
+        <h1 class="section-title">常见问题中心 (FAQ) - 第 {pno} 页 (已全部展开)</h1>
+        <p class="section-desc">本中心共收录 100 个高频进阶疑问解答，全部问题与答案默认完整展开呈现，涵盖 9 大主题配额。</p>
       </div>
 
       <div class="faq-accordion">
@@ -627,7 +745,7 @@ for pno in range(1, total_faq_pages + 1):
   rel_faq_path = "faq/index.html" if pno == 1 else f"faq/page/{pno}/index.html"
   canonical_faq = f"{DOMAIN}/faq/" if pno == 1 else f"{DOMAIN}/faq/page/{pno}/"
   faq_bc = [("首页", "/"), ("常见问题", "/faq/")] if pno > 1 else [("首页", "/"), ("常见问题", "")]
-  write_page(rel_faq_path, wrap_html(f"常见问题中心 (第 {pno} 页)｜{BRAND}", "JichangPlus 机场加常见问题解答中心，提供 100 个高频进阶疑问的标准解答与指南内链。", canonical_faq, f"常见问题中心 (FAQ) - 第 {pno} 页", faq_page_content, breadcrumbs=faq_bc))
+  write_page(rel_faq_path, wrap_html(f"常见问题中心 (第 {pno} 页)｜{BRAND}", "JichangPlus 机场加常见问题解答中心，提供 100 个高频进阶疑问的标准解答与指南内链。", canonical_faq, f"常见问题中心 (FAQ) - 第 {pno} 页 (已全部展开)", faq_page_content, breadcrumbs=faq_bc))
 
 # --- 5. SERIES & LEGAL PAGES ---
 with open("content/series/_index.md", "r", encoding="utf-8") as f:
@@ -736,4 +854,8 @@ rss_xml = f"""<?xml version="1.0" encoding="UTF-8" ?>
 with open("public/rss.xml", "w", encoding="utf-8") as f:
   f.write(rss_xml)
 
-print(f"Build complete! Successfully generated {len(sitemap_urls)} static pages in public/")
+# --- 10. SEARCH-INDEX.JSON (For instant article search) ---
+with open("public/search-index.json", "w", encoding="utf-8") as f:
+  json.dump(search_index, f, ensure_ascii=False)
+
+print(f"Build complete! Successfully generated {len(sitemap_urls)} static pages & search index in public/")

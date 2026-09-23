@@ -894,3 +894,239 @@ a:hover {
     font-size: 1.65rem;
   }
 }
+
+/* TG Channel Button */
+.header-tg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: #0088cc;
+  color: #ffffff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background 0.15s ease;
+}
+.header-tg-btn:hover {
+  background: #0077b5;
+}
+
+/* Header Live Search */
+.header-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  padding: 6px 12px 6px 30px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  outline: none;
+  width: 170px;
+  transition: width 0.2s ease, border-color 0.2s ease;
+  background: #f8fafc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") no-repeat 9px center;
+}
+.search-input:focus {
+  width: 220px;
+  border-color: var(--brand-blue);
+  background-color: #ffffff;
+}
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  max-height: 380px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  z-index: 200;
+  margin-top: 6px;
+}
+.search-dropdown.active {
+  display: block;
+}
+.search-result-item {
+  display: block;
+  padding: 10px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  text-decoration: none !important;
+}
+.search-result-item:hover {
+  background: #f8fafc;
+}
+.search-result-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+.search-result-desc {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* Prominent 4 Providers Section Styling */
+.featured-providers-box {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 36px 0;
+}
+.featured-providers-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.featured-providers-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.featured-four-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.featured-item {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+.featured-item.p1 { border-top: 4px solid #2563eb; }
+.featured-item.p2 { border-top: 4px solid #16a34a; }
+.featured-item.p3 { border-top: 4px solid #9333ea; }
+.featured-item.p4 { border-top: 4px solid #ea580c; }
+
+.featured-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.featured-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.featured-item.p1 .featured-badge { background: #eff6ff; color: #2563eb; }
+.featured-item.p2 .featured-badge { background: #f0fdf4; color: #16a34a; }
+.featured-item.p3 .featured-badge { background: #faf5ff; color: #9333ea; }
+.featured-item.p4 .featured-badge { background: #fff7ed; color: #ea580c; }
+
+.featured-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+.featured-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e11d48;
+  margin-bottom: 6px;
+}
+.featured-positioning {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+.featured-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+/* Eye-Catching CTA Register Buttons */
+.btn-reg-prominent {
+  display: block;
+  text-align: center;
+  padding: 11px 16px;
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  font-weight: 800;
+  border-radius: 8px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  letter-spacing: 0.02em;
+}
+.btn-reg-prominent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15), 0 4px 6px -2px rgba(0,0,0,0.05);
+  opacity: 0.95;
+}
+.featured-item.p1 .btn-reg-prominent { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); }
+.featured-item.p2 .btn-reg-prominent { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); }
+.featured-item.p3 .btn-reg-prominent { background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%); }
+.featured-item.p4 .btn-reg-prominent { background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); }
+
+.featured-link-sub {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* Expanded FAQ Details Styling */
+details.faq-item {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: #ffffff;
+}
+details.faq-item summary {
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+  background: #f8fafc;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+}
+details.faq-item summary:hover {
+  background: #f1f5f9;
+}
+details.faq-item .faq-answer {
+  padding: 16px 20px;
+  background: #ffffff;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Mobile search responsiveness */
+@media (max-width: 860px) {
+  .header-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .search-input {
+    width: 100% !important;
+  }
+  .search-dropdown {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  .header-actions {
+    flex-wrap: wrap;
+  }
+}
