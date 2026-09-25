@@ -54,7 +54,9 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_CN">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="192x192" href="/images/icon-192.png">
   <link rel="alternate" type="application/rss+xml" title="{BRAND} RSS" href="/rss.xml">
   <link rel="stylesheet" href="/css/cleanwhite.css">
   <script defer src="/js/main.js"></script>
@@ -65,7 +67,10 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
     <div class="container">
       <div class="header-top">
         <div class="site-brand">
-          <a href="/" class="brand-link">{BRAND}</a>
+          <a href="/" class="brand-link" style="display:inline-flex; align-items:center; gap:8px;">
+            <img src="/favicon.png" alt="JichangPlus Logo" width="28" height="28" style="border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
+            {BRAND}
+          </a>
           <span class="site-tagline">机场使用技巧与进阶管理教程</span>
         </div>
         <div class="header-actions">
