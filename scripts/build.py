@@ -4,7 +4,7 @@ from datetime import datetime
 DOMAIN = "https://jichangplus.xyz"
 SITE_TITLE = "JichangPlus 机场加｜机场使用技巧与进阶管理教程"
 BRAND = "JichangPlus 机场加"
-TG_CHANNEL = "https://t.me/+U77JVhkbnhgzM2Q9"
+TG_CHANNEL = "https://t.me/+96hrQEFzuPQ5NjQ1"
 
 with open("data/site-seo-profile.json", "r", encoding="utf-8") as f:
   profile = json.load(f)

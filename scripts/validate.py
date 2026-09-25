@@ -275,14 +275,14 @@ else:
 print("\n正在验证最新专项定制需求...")
 
 # A. TG 频道链接检查
-if "https://t.me/+U77JVhkbnhgzM2Q9" not in home_html:
-  errors.append("首页未找到指定的 Telegram 频道链接: https://t.me/+U77JVhkbnhgzM2Q9")
+if "https://t.me/+96hrQEFzuPQ5NjQ1" not in home_html:
+  errors.append("首页未找到指定的 Telegram 频道链接: https://t.me/+96hrQEFzuPQ5NjQ1")
 else:
   print(" [PASS] 首页页眉与页脚均已成功集成官方 Telegram 频道链接")
 
 with open("public/contact/index.html", "r", encoding="utf-8") as f:
   contact_html = f.read()
-if "https://t.me/+U77JVhkbnhgzM2Q9" not in contact_html:
+if "https://t.me/+96hrQEFzuPQ5NjQ1" not in contact_html:
   errors.append("联系我们页面未找到指定的 Telegram 频道链接")
 else:
   print(" [PASS] 联系我们页面已包含官方 Telegram 频道链接")

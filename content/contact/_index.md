@@ -13,7 +13,7 @@ type: "legal"
 
 ## 官方交流与反馈渠道
 
-- **官方 Telegram 交流频道**：[https://t.me/+U77JVhkbnhgzM2Q9](https://t.me/+U77JVhkbnhgzM2Q9)（加入群组获取最新机场测速通知与维护更新）
+- **官方 Telegram 交流频道**：[https://t.me/+96hrQEFzuPQ5NjQ1](https://t.me/+96hrQEFzuPQ5NjQ1)（加入群组获取最新机场测速通知与维护更新）
 - **反馈邮箱**：`contact@jichangplus.xyz`
 - **处理时效**：我们通常在 2 个工作日内查验并回复合规建议与纠错请求。
 
