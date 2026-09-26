@@ -274,11 +274,11 @@ else:
 # --- 11. 新增用户专项要求自动化核验 ---
 print("\n正在验证最新专项定制需求...")
 
-# A. TG 频道链接检查
-if "https://t.me/+96hrQEFzuPQ5NjQ1" not in home_html:
-  errors.append("首页未找到指定的 Telegram 频道链接: https://t.me/+96hrQEFzuPQ5NjQ1")
+# A. TG 按钮移除与规范检查
+if "header-tg-btn" in home_html:
+  errors.append("首页页眉仍然存在 TG 按钮 (header-tg-btn)，需完全移除")
 else:
-  print(" [PASS] 首页页眉与页脚均已成功集成官方 Telegram 频道链接")
+  print(" [PASS] 首页页眉已成功移除 TG 按钮，保持简洁布局")
 
 with open("public/contact/index.html", "r", encoding="utf-8") as f:
   contact_html = f.read()

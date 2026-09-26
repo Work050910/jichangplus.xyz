@@ -78,7 +78,6 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
             <input type="search" id="site-search-input" class="search-input" placeholder="搜索文章/技巧..." autocomplete="off">
             <div id="search-results" class="search-dropdown"></div>
           </div>
-          <a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow" class="header-tg-btn">💬 TG 频道</a>
           <a href="/service/" class="header-cta-btn">服务说明</a>
           <button class="menu-toggle" aria-expanded="false" aria-label="切换主导航菜单">☰ 菜单</button>
         </div>
@@ -335,7 +334,6 @@ home_body = f"""<section class="hero-section">
       <a href="/service/" class="btn-primary">查看设备适配与服务说明</a>
       <a href="/series/" class="btn-secondary">浏览全站系列学习地图</a>
       <a href="/faq/" class="btn-secondary">查阅 100 常见问题解答</a>
-      <a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow" class="btn-secondary" style="border-color:#0088cc; color:#0088cc !important;">加入官方 TG 交流群</a>
     </div>
     <div class="hero-disclosure">披露说明：本站包含赞助邀请链接 (sponsored nofollow noopener)，所有排序与推荐依据真实核验记录与使用场景，价格以各结算页为准。</div>
   </div>
