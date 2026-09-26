@@ -24,6 +24,14 @@ os.makedirs("public/images", exist_ok=True)
 shutil.copy("static/css/cleanwhite.css", "public/css/cleanwhite.css")
 shutil.copy("static/js/main.js", "public/js/main.js")
 shutil.copy("static/favicon.svg", "public/favicon.svg")
+if os.path.exists("static/favicon.png"):
+  shutil.copy("static/favicon.png", "public/favicon.png")
+if os.path.exists("static/images"):
+  for item in os.listdir("static/images"):
+    s = os.path.join("static/images", item)
+    d = os.path.join("public/images", item)
+    if os.path.isfile(s):
+      shutil.copy(s, d)
 
 all_urls = []
 search_index = []
