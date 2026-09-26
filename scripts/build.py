@@ -93,6 +93,7 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
       <nav class="main-nav" aria-label="全站主导航">
         <ul class="nav-list">
           <li><a href="/" class="nav-link">首页</a></li>
+          <li><a href="/recommend/" class="nav-link">机场推荐</a></li>
           <li><a href="/series/" class="nav-link">系列导读</a></li>
           <li><a href="/subscription-management/" class="nav-link">订阅管理</a></li>
           <li><a href="/multi-device/" class="nav-link">多设备使用</a></li>
@@ -128,6 +129,7 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
         <div class="footer-nav-col">
           <div class="footer-col-title">进阶专题</div>
           <ul class="footer-links">
+            <li><a href="/recommend/">精选机场推荐</a></li>
             <li><a href="/subscription-management/">订阅日常管理</a></li>
             <li><a href="/multi-device/">多设备协同使用</a></li>
             <li><a href="/traffic-nodes/">流量规划与节点</a></li>
@@ -339,7 +341,8 @@ home_body = f"""<section class="hero-section">
     <h1 class="hero-title">JichangPlus 机场加：让订阅、设备和日常使用更有条理</h1>
     <p class="hero-description">{hero_text}</p>
     <div class="hero-actions">
-      <a href="/service/" class="btn-primary">查看设备适配与服务说明</a>
+      <a href="/recommend/" class="btn-primary">查看当前精选机场推荐榜</a>
+      <a href="/service/" class="btn-secondary">设备适配与服务说明</a>
       <a href="/series/" class="btn-secondary">浏览全站系列学习地图</a>
       <a href="/faq/" class="btn-secondary">查阅 100 常见问题解答</a>
     </div>
@@ -458,6 +461,7 @@ write_page("index.html", wrap_html(SITE_TITLE, profile["siteTopic"], DOMAIN + "/
 
 # --- 2. SECTION LANDING PAGES & EXPANDED ARTICLES ---
 sections = [
+  ("recommend", "机场推荐", "机场推荐与精选评测", 10),
   ("subscription-management", "订阅管理", "机场订阅管理", 16),
   ("multi-device", "多设备使用", "机场多设备使用", 14),
   ("traffic-nodes", "流量与节点", "机场流量管理", 16),
@@ -480,25 +484,30 @@ for sec_dir, sec_name, sec_kw, count in sections:
       <h3 class="article-card-title"><a href="/{sec_dir}/{art_slug}/">{title}</a></h3>
       <p class="article-card-summary">围绕【{sec_kw}】与性价比机场选择展开的步骤化深度长文，提供落地实操与防踩坑指南。</p>
       <div class="article-card-meta">
-        <span>更新：2026-09-23</span>
-        <span>字数：约 1580 字</span>
+        <span>更新：2026-09-26</span>
+        <span>字数：约 1500 字</span>
       </div>
     </div>"""
+
+  extra_box = prominent_box_html if sec_dir == "recommend" else ""
+  sec_h1 = f"{sec_name}精选指南与横向评测" if sec_dir == "recommend" else f"{sec_name}进阶系列教程"
+  sec_lead = f"本专栏系统收录 {len(seeds)} 篇高点击率深度长文，围绕性价比机场推荐、便宜机场、稳定专线、Clash 机场及多设备协同，提供落地实操与防踩坑选型指南。" if sec_dir == "recommend" else f"本专栏收录 {len(seeds)} 篇深度进阶长文，围绕“{sec_kw}”核心意图，系统建立条理分明的日常网络使用与管理体系。"
 
   sec_content = f"""<section class="section">
     <div class="container">
       <div class="section-header">
-        <h1 class="section-title">{sec_name}进阶系列教程</h1>
-        <p class="section-desc">本专栏收录 {len(seeds)} 篇深度进阶长文，围绕“{sec_kw}”核心意图，系统建立条理分明的日常网络使用与管理体系。</p>
+        <h1 class="section-title">{sec_h1}</h1>
+        <p class="section-desc">{sec_lead}</p>
       </div>
-      <div class="cards-grid">
+      {extra_box}
+      <div class="cards-grid" style="margin-top: 24px;">
         {cards_html}
       </div>
     </div>
   </section>"""
 
   sec_bc = [("首页", "/"), (sec_name, "")]
-  write_page(f"{sec_dir}/index.html", wrap_html(f"{sec_name}｜{BRAND}", f"JichangPlus 机场加{sec_name}专栏，系统收录 {count} 篇进阶深度长文。", f"{DOMAIN}/{sec_dir}/", f"{sec_name}进阶系列教程", sec_content, breadcrumbs=sec_bc))
+  write_page(f"{sec_dir}/index.html", wrap_html(f"{sec_name}｜{BRAND}", f"JichangPlus 机场加{sec_name}专栏，系统收录 {count} 篇进阶深度长文。", f"{DOMAIN}/{sec_dir}/", sec_h1, sec_content, breadcrumbs=sec_bc))
 
   for s_idx, title in enumerate(seeds, 1):
     art_slug = f"{sec_dir}-part-{s_idx:02d}"

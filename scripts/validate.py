@@ -321,6 +321,24 @@ if "btn-reg-prominent" not in art_sample:
 else:
   print(" [PASS] 文章内四个主推机场板块已区分呈现，并配置显眼的官网注册按钮")
 
+# F. 机场推荐主导航与高点击率长文检查
+if "href=\"/recommend/\" class=\"nav-link\">机场推荐</a>" not in home_html:
+  errors.append("首页主导航中未找到【机场推荐】导航链接")
+else:
+  print(" [PASS] 首页主导航成功配置【机场推荐】栏目入口")
+
+if not os.path.exists("public/recommend/index.html"):
+  errors.append("未找到机场推荐专栏落地页 public/recommend/index.html")
+else:
+  print(" [PASS] 机场推荐专栏落地页生成正常")
+
+rec_parts = [f"public/recommend/recommend-part-{i:02d}/index.html" for i in range(1, 11)]
+missing_rec = [p for p in rec_parts if not os.path.exists(p)]
+if missing_rec:
+  errors.append(f"机场推荐专栏文章缺失: {missing_rec}")
+else:
+  print(f" [PASS] 机场推荐专栏全套 10 篇高点击率深度长文均已完整生成并建立索引")
+
 # --- 10. 汇总报告 ---
 print("\n==================================================")
 if errors:
