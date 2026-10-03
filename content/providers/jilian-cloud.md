@@ -11,7 +11,7 @@ rank: 6
 priceFrom: "25 元/月"
 trafficFrom: "200GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://jilian.cloud/#/?code=aff_jilian"
+inviteURL: "https://quanqiu.jlyvipaff.com/#/?code=NplcUEEV"
 lastChecked: "2026-09-19"
 slug: "jilian-cloud"
 bodyCharCount: 988

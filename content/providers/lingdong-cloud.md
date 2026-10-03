@@ -11,7 +11,7 @@ rank: 20
 priceFrom: "23 元/月"
 trafficFrom: "160GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://lingdong.cloud/#/?code=aff_lingdong"
+inviteURL: "https://lingdongyun.lingdongaff.com/#/?code=ibHQOYGt"
 lastChecked: "2026-09-19"
 slug: "lingdong-cloud"
 bodyCharCount: 988

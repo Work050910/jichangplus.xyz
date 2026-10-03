@@ -11,7 +11,7 @@ rank: 18
 priceFrom: "21 元/月"
 trafficFrom: "180GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://wavenet.link/#/?code=aff_wavenet"
+inviteURL: "https://langwang.wavenetaff.com/#/?code=pYe3kzd4"
 lastChecked: "2026-09-19"
 slug: "wavenet"
 bodyCharCount: 984

@@ -11,7 +11,7 @@ rank: 12
 priceFrom: "20 元/月"
 trafficFrom: "150GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://sogo.cloud/#/?code=aff_sogo"
+inviteURL: "https://afasfw.sogotztz2.sbs/#/?code=Mgoqf6KP"
 lastChecked: "2026-09-19"
 slug: "sogo-cloud"
 bodyCharCount: 980

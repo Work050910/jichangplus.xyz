@@ -11,7 +11,7 @@ rank: 8
 priceFrom: "22 元/月"
 trafficFrom: "160GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://guangsu.cloud/#/?code=aff_guangsu"
+inviteURL: "https://quanqiu.gsyaff.com/#/?code=AAkbe2W6"
 lastChecked: "2026-09-19"
 slug: "guangsu-cloud"
 bodyCharCount: 988

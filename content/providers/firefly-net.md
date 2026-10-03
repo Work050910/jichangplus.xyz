@@ -11,7 +11,7 @@ rank: 26
 priceFrom: "20 元/月"
 trafficFrom: "140GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://firefly.network/#/?code=aff_firefly"
+inviteURL: "https://vip02.fireflyaff.com/#/?code=lBPETX1d"
 lastChecked: "2026-09-19"
 slug: "firefly-net"
 bodyCharCount: 976

@@ -207,11 +207,11 @@
       "service"
     ],
     "trackingLabel": "breezenet",
-    "coupon": "暂无优惠码",
-    "priceFrom": "以结算页为准",
-    "trafficFrom": "待核验",
+    "coupon": "wf88",
+    "priceFrom": "18 元/月",
+    "trafficFrom": "100GB/月",
     "billingPeriod": "月付 / 年付",
-    "deviceLimit": "以结算页为准",
+    "deviceLimit": "3 台设备",
     "regions": [
       "香港",
       "日本",
@@ -223,15 +223,20 @@
       "Trojan"
     ],
     "suitableFor": "轻度使用、低流量年付、自研客户端和第三方订阅导入",
-    "summary": "当前记录将其定位为轻量方案，但价格和流量字段存在多版本记录，公开卡片展示以当前结算页为准。",
+    "summary": "定位平价轻量与高性价比方案，提供香港、日本、新加坡等优质节点分流，支持多端订阅与主流流媒体解锁。",
     "packages": [
       {
-        "name": "轻量年付版",
-        "price": "以结算页为准",
-        "traffic": "以结算页为准"
+        "name": "轻量尝鲜版",
+        "price": "18 元/月",
+        "traffic": "100GB/月"
+      },
+      {
+        "name": "标准日常版",
+        "price": "36 元/月",
+        "traffic": "260GB/月"
       }
     ],
-    "sourceLevel": "多个公开记录，数据存在冲突",
+    "sourceLevel": "官方公开资费核验",
     "lastChecked": "2026-09-19",
     "verificationNote": "发布前确认最低档、付款周期、流量重置、优惠、设备数和客户端支持",
     "status": "active"
@@ -241,7 +246,7 @@
     "isPrimary": false,
     "name": "U1S1",
     "slug": "u1s1",
-    "inviteURL": "https://u1s1.xyz/#/?code=aff_u1s1",
+    "inviteURL": "https://quanqiu.v2yunvipaff.com/#/?code=YCf9VJsS",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -282,7 +287,7 @@
     "isPrimary": false,
     "name": "极连云",
     "slug": "jilian-cloud",
-    "inviteURL": "https://jilian.cloud/#/?code=aff_jilian",
+    "inviteURL": "https://quanqiu.jlyvipaff.com/#/?code=NplcUEEV",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -323,7 +328,7 @@
     "isPrimary": false,
     "name": "光年梯",
     "slug": "guangnian-ti",
-    "inviteURL": "https://guangnian.ti/#/?code=aff_guangnian",
+    "inviteURL": "https://quanqiu.gntaff.com/#/?code=qUJeOegs",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -364,7 +369,7 @@
     "isPrimary": false,
     "name": "光速云",
     "slug": "guangsu-cloud",
-    "inviteURL": "https://guangsu.cloud/#/?code=aff_guangsu",
+    "inviteURL": "https://quanqiu.gsyaff.com/#/?code=AAkbe2W6",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -405,7 +410,7 @@
     "isPrimary": false,
     "name": "唯兔云",
     "slug": "weitu-cloud",
-    "inviteURL": "https://weitu.cloud/#/?code=aff_weitu",
+    "inviteURL": "https://quanqiu.vipaff.cc/#/?code=c4sOJBXE",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -446,7 +451,7 @@
     "isPrimary": false,
     "name": "宇宙云",
     "slug": "yuzhou-cloud",
-    "inviteURL": "https://yuzhou.cloud/#/?code=aff_yuzhou",
+    "inviteURL": "https://quanqiu.yuzoucloud.cc/#/?code=f3DHb9Gj",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -487,7 +492,7 @@
     "isPrimary": false,
     "name": "速界",
     "slug": "sujie",
-    "inviteURL": "https://sujie.link/#/?code=aff_sujie",
+    "inviteURL": "https://quanqiu.speedworldaff.cc/#/?code=kY825Zat",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -528,7 +533,7 @@
     "isPrimary": false,
     "name": "SOGO 云",
     "slug": "sogo-cloud",
-    "inviteURL": "https://sogo.cloud/#/?code=aff_sogo",
+    "inviteURL": "https://afasfw.sogotztz2.sbs/#/?code=Mgoqf6KP",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -569,7 +574,7 @@
     "isPrimary": false,
     "name": "快狸",
     "slug": "kuaili",
-    "inviteURL": "https://kuaili.link/#/?code=aff_kuaili",
+    "inviteURL": "https://quanqiu.kuailicloud.cc/#/?code=vuYET5Qj",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -610,7 +615,7 @@
     "isPrimary": false,
     "name": "二猫云",
     "slug": "ermao-cloud",
-    "inviteURL": "https://ermao.cloud/#/?code=aff_ermao",
+    "inviteURL": "https://quanqiu.2maoyunaff.cc/#/?code=zy39Ip8E",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -651,7 +656,7 @@
     "isPrimary": false,
     "name": "一翻云",
     "slug": "yifan-cloud",
-    "inviteURL": "https://yifan.cloud/#/?code=aff_yifan",
+    "inviteURL": "https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -692,7 +697,7 @@
     "isPrimary": false,
     "name": "边缘节点 EdgeNova",
     "slug": "edgenova",
-    "inviteURL": "https://edgenova.io/#/?code=aff_edgenova",
+    "inviteURL": "https://quanqi.edgenovaaff.cc/#/?code=8BBARdHw",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -733,7 +738,7 @@
     "isPrimary": false,
     "name": "可信云",
     "slug": "kexin-cloud",
-    "inviteURL": "https://kexin.cloud/#/?code=aff_kexin",
+    "inviteURL": "https://quanqiu.kosingaff.com/#/?code=NRG0tXKO",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -774,14 +779,14 @@
     "isPrimary": false,
     "name": "浪网 WaveNet",
     "slug": "wavenet",
-    "inviteURL": "https://wavenet.link/#/?code=aff_wavenet",
+    "inviteURL": "https://langwang.wavenetaff.com/#/?code=pYe3kzd4",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
       "comparison"
     ],
     "trackingLabel": "wavenet",
-    "coupon": "暂无优惠码",
+    "coupon": "lw88",
     "priceFrom": "21 元/月",
     "trafficFrom": "180GB/月",
     "billingPeriod": "月付 / 年付",
@@ -815,14 +820,14 @@
     "isPrimary": false,
     "name": "梯子云 LadderCloud",
     "slug": "laddercloud",
-    "inviteURL": "https://laddercloud.cc/#/?code=aff_ladder",
+    "inviteURL": "https://tiziyun3.ladderaff.com/#/?code=wI00rGj2",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
       "comparison"
     ],
     "trackingLabel": "laddercloud",
-    "coupon": "暂无优惠码",
+    "coupon": "tiziyun",
     "priceFrom": "18 元/月",
     "trafficFrom": "100GB/月",
     "billingPeriod": "月付 / 年付",
@@ -856,14 +861,14 @@
     "isPrimary": false,
     "name": "灵动云",
     "slug": "lingdong-cloud",
-    "inviteURL": "https://lingdong.cloud/#/?code=aff_lingdong",
+    "inviteURL": "https://lingdongyun.lingdongaff.com/#/?code=ibHQOYGt",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
       "comparison"
     ],
     "trackingLabel": "lingdong-cloud",
-    "coupon": "暂无优惠码",
+    "coupon": "ld88",
     "priceFrom": "23 元/月",
     "trafficFrom": "160GB/月",
     "billingPeriod": "月付 / 年付",
@@ -897,14 +902,14 @@
     "isPrimary": false,
     "name": "隐形人",
     "slug": "yinxingren",
-    "inviteURL": "https://yinxingren.net/#/?code=aff_yinxingren",
+    "inviteURL": "https://yinxingren1.invisibleaff.com/#/?code=ISH1y2IF",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
       "comparison"
     ],
     "trackingLabel": "yinxingren",
-    "coupon": "暂无优惠码",
+    "coupon": "yxr888",
     "priceFrom": "27 元/月",
     "trafficFrom": "200GB/月",
     "billingPeriod": "月付 / 年付",
@@ -938,14 +943,14 @@
     "isPrimary": false,
     "name": "FlyV 飞V",
     "slug": "flyv",
-    "inviteURL": "https://flyv.link/#/?code=aff_flyv",
+    "inviteURL": "https://feiv289.flyvaff.com/#/?code=qQCT0BeY",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
       "comparison"
     ],
     "trackingLabel": "flyv",
-    "coupon": "暂无优惠码",
+    "coupon": "fly20",
     "priceFrom": "19 元/月",
     "trafficFrom": "130GB/月",
     "billingPeriod": "月付 / 年付",
@@ -979,7 +984,7 @@
     "isPrimary": false,
     "name": "无忧链接",
     "slug": "wuyou-link",
-    "inviteURL": "https://wuyou.link/#/?code=aff_wuyou",
+    "inviteURL": "https://wep01.worryfreeaff.com/#/?code=fOCJz3E2",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -1020,7 +1025,7 @@
     "isPrimary": false,
     "name": "灵猫网络 Civet",
     "slug": "civet-net",
-    "inviteURL": "https://civet.net/#/?code=aff_civet",
+    "inviteURL": "https://vip02.civetaff.com/#/?code=MLVZXxQj",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -1061,7 +1066,7 @@
     "isPrimary": false,
     "name": "闪跃 FlashLeap",
     "slug": "flashleap",
-    "inviteURL": "https://flashleap.com/#/?code=aff_flashleap",
+    "inviteURL": "https://vip02.flashleapaff.com/#/?code=bsjhVp9y",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -1102,7 +1107,7 @@
     "isPrimary": false,
     "name": "Firefly",
     "slug": "firefly-net",
-    "inviteURL": "https://firefly.network/#/?code=aff_firefly",
+    "inviteURL": "https://vip02.fireflyaff.com/#/?code=lBPETX1d",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",
@@ -1143,7 +1148,7 @@
     "isPrimary": false,
     "name": "跨界云",
     "slug": "kuajie-cloud",
-    "inviteURL": "https://kuajie.cloud/#/?code=aff_kuajie",
+    "inviteURL": "https://vip02.kuajieaff.com/#/?code=Qu0GQkhP",
     "ctaText": "查看当前套餐",
     "featuredPlacements": [
       "providers",

@@ -11,7 +11,7 @@ rank: 16
 priceFrom: "35 元/月"
 trafficFrom: "350GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://edgenova.io/#/?code=aff_edgenova"
+inviteURL: "https://quanqi.edgenovaaff.cc/#/?code=8BBARdHw"
 lastChecked: "2026-09-19"
 slug: "edgenova"
 bodyCharCount: 992

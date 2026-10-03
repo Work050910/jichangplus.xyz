@@ -11,7 +11,7 @@ rank: 23
 priceFrom: "22 元/月"
 trafficFrom: "150GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://wuyou.link/#/?code=aff_wuyou"
+inviteURL: "https://wep01.worryfreeaff.com/#/?code=fOCJz3E2"
 lastChecked: "2026-09-19"
 slug: "wuyou-link"
 bodyCharCount: 992

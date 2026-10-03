@@ -11,7 +11,7 @@ rank: 10
 priceFrom: "30 元/月"
 trafficFrom: "300GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://yuzhou.cloud/#/?code=aff_yuzhou"
+inviteURL: "https://quanqiu.yuzoucloud.cc/#/?code=f3DHb9Gj"
 lastChecked: "2026-09-19"
 slug: "yuzhou-cloud"
 bodyCharCount: 988

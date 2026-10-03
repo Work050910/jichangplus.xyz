@@ -11,7 +11,7 @@ rank: 14
 priceFrom: "24 元/月"
 trafficFrom: "200GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://ermao.cloud/#/?code=aff_ermao"
+inviteURL: "https://quanqiu.2maoyunaff.cc/#/?code=zy39Ip8E"
 lastChecked: "2026-09-19"
 slug: "ermao-cloud"
 bodyCharCount: 988

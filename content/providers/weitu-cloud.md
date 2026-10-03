@@ -11,7 +11,7 @@ rank: 9
 priceFrom: "16 元/月"
 trafficFrom: "100GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://weitu.cloud/#/?code=aff_weitu"
+inviteURL: "https://quanqiu.vipaff.cc/#/?code=c4sOJBXE"
 lastChecked: "2026-09-19"
 slug: "weitu-cloud"
 bodyCharCount: 988

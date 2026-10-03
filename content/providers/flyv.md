@@ -11,7 +11,7 @@ rank: 22
 priceFrom: "19 元/月"
 trafficFrom: "130GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://flyv.link/#/?code=aff_flyv"
+inviteURL: "https://feiv289.flyvaff.com/#/?code=qQCT0BeY"
 lastChecked: "2026-09-19"
 slug: "flyv"
 bodyCharCount: 980

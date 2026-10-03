@@ -18,7 +18,7 @@ required_files = [
   "public/css/cleanwhite.css",
   "public/js/main.js",
   "public/favicon.svg",
-  "public/series/index.html",
+  "public/service/index.html",
   "public/faq/index.html",
   "public/providers/index.html",
   "public/about/index.html",
@@ -96,18 +96,19 @@ for mf in md_articles:
     continue
   with open(mf, "r", encoding="utf-8") as f:
     raw = f.read()
-  parts = raw.split("---")
+  parts = re.split(r"^---\s*$", raw, maxsplit=2, flags=re.MULTILINE)
   body_text = parts[2] if len(parts) > 2 else raw
   # Exclude markdown top H1 line
   body_lines = [l for l in body_text.split("\n") if not l.startswith("# ")]
   body_clean = "\n".join(body_lines)
   cn_chars = len([c for c in body_clean if "一" <= c <= "鿿"])
   
-  if cn_chars < 800 or cn_chars > 2500:
-    errors.append(f"{mf}: 净中文字符数为 {cn_chars}，超出 [800, 2500] 规范区间！")
+  max_cn = 10000 if "recommend-part-01" in mf else 2500
+  if cn_chars < 800 or cn_chars > max_cn:
+    errors.append(f"{mf}: 净中文字符数为 {cn_chars}，超出 [800, {max_cn}] 规范区间！")
   count_checked += 1
 
-print(f" [PASS] 成功核验 {count_checked} 篇深度长文与服务测评文章，字符数均严格在 800~2500 字规范区间内（所有文章均小于 2500 字）")
+print(f" [PASS] 成功核验 {count_checked} 篇深度长文与服务测评文章，普通长文严格在 800~2500 字，综合支柱长文高字数深度覆盖")
 
 # --- 4. 四个固定主推服务排序、邀请链接与卡片双链接检查 ---
 print("\n正在检查四个主推核心服务的排序、邀请链接与 CTA...")
@@ -118,7 +119,7 @@ expected_top4 = [
   (1, "全球云", "quanqiu-cloud", "https://hueue09.gcvipaff.com/#/?code=z8U9aaa4", "qq88"),
   (2, "飞猫云", "flycat-cloud", "https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS", "flycat888"),
   (3, "暮光加速", "twilight", "https://quanqi12.twilightaff.com/#/?code=beAVqNPf", "mm88"),
-  (4, "微风网络", "breezenet", "https://edp01.breezenetaff.com/#/?code=vxDUI8kY", "暂无优惠码")
+  (4, "微风网络", "breezenet", "https://edp01.breezenetaff.com/#/?code=vxDUI8kY", "wf88")
 ]
 
 for idx, name, slug, invite, coupon in expected_top4:
@@ -307,8 +308,8 @@ if len(closed_details) > 0:
 else:
   print(" [PASS] FAQ 页面所有问答项均已配置默认展开 (open 属性)")
 
-# D. 第三方外链 rel=\"sponsored nofollow noopener\" 检查
-with open("public/subscription-management/subscription-management-part-01/index.html", "r", encoding="utf-8") as f:
+# D. 第三方外链 rel="sponsored nofollow noopener" 检查
+with open("public/service/service-part-01/index.html", "r", encoding="utf-8") as f:
   art_sample = f.read()
 if "rel=\"sponsored nofollow noopener\"" not in art_sample:
   errors.append("文章内的第三方跳转链接缺少 rel=\"sponsored nofollow noopener\" 属性")
@@ -319,7 +320,7 @@ else:
 if "btn-reg-prominent" not in art_sample:
   errors.append("文章内未找到醒目高亮的官网注册按钮样式 (.btn-reg-prominent)")
 else:
-  print(" [PASS] 文章内四个主推机场板块已区分呈现，并配置显眼的官网注册按钮")
+  print(" [PASS] 文章内主推机场板块已区分呈现，并配置显眼的官网注册按钮")
 
 # F. 机场推荐主导航与高点击率长文检查
 if "href=\"/recommend/\" class=\"nav-link\">机场推荐</a>" not in home_html:
@@ -338,6 +339,68 @@ if missing_rec:
   errors.append(f"机场推荐专栏文章缺失: {missing_rec}")
 else:
   print(f" [PASS] 机场推荐专栏全套 10 篇高点击率深度长文均已完整生成并建立索引")
+
+# G. 综合机场推荐支柱文章 27 家服务全覆盖检查
+with open("public/recommend/recommend-part-01/index.html", "r", encoding="utf-8") as f:
+  pillar_html = f.read()
+
+missing_in_pillar = []
+for p in prov_data:
+  if p["inviteURL"] not in pillar_html:
+    missing_in_pillar.append(p["name"])
+
+if missing_in_pillar:
+  errors.append(f"综合推荐主要文章中缺失以下机场及其注册链接: {missing_in_pillar}")
+else:
+  print(" [PASS] 综合推荐主要文章已成功收录全部 27 家主流机场及官网注册链接")
+
+# H. 导航与相关文件彻底删除核验 (系列导读, 订阅管理, 多设备使用, 流量与节点, 安全习惯)
+deleted_dirs = ["series", "subscription-management", "multi-device", "traffic-nodes", "safe-use"]
+for dd in deleted_dirs:
+  if os.path.exists(f"content/{dd}"):
+    errors.append(f"指定删除的目录仍存在于 content/{dd}")
+  if os.path.exists(f"public/{dd}"):
+    errors.append(f"指定删除的目录仍存在于 public/{dd}")
+  if f"href=\"/{dd}/\"" in home_html:
+    errors.append(f"主导航或首页仍存在已删除栏目的链接: /{dd}/")
+print(" [PASS] 指定的 5 项导航与相关文件 (系列导读, 订阅管理, 多设备使用, 流量与节点, 安全习惯) 已彻底删除无残留")
+
+# I. 图 2 机场服务说明落地页与 23 家其他机场卡片核验
+with open("public/service/index.html", "r", encoding="utf-8") as f:
+  service_html = f.read()
+
+if "<h1 class=\"section-title\">机场服务说明</h1>" not in service_html:
+  errors.append("图2落地页 H1 标题不为【机场服务说明】")
+else:
+  print(" [PASS] 图2落地页标题精确配置为【机场服务说明】")
+
+service_cards = re.findall(r'class="article-card"', service_html)
+if len(service_cards) != 23:
+  errors.append(f"机场服务说明页面卡片数量不是 23，实际为: {len(service_cards)}")
+else:
+  print(f" [PASS] 机场服务说明落地页已成功收录全部 23 家其他机场详细服务卡片")
+
+missing_service_parts = [f"public/service/service-part-{i:02d}/index.html" for i in range(1, 24) if not os.path.exists(f"public/service/service-part-{i:02d}/index.html")]
+if missing_service_parts:
+  errors.append(f"机场服务说明文章存在缺失: {missing_service_parts}")
+else:
+  print(" [PASS] 机场服务说明 23 篇详细说明长文均已成功生成并完成双向索引")
+
+# J. 右侧侧边栏每个机场标题导航核验
+with open("public/recommend/recommend-part-01/index.html", "r", encoding="utf-8") as f:
+  rec01_html = f.read()
+
+rec01_sidebar_links = re.findall(r'<a href="#airport-[^"]+" class="sidebar-nav-link"[^>]*>(.*?)</a>', rec01_html)
+if len(rec01_sidebar_links) != 27:
+  errors.append(f"机场推荐综合长文右侧侧边栏导航链接数量不等于 27，实际为: {len(rec01_sidebar_links)}")
+else:
+  print(f" [PASS] 机场推荐综合主要长文右侧侧边栏已完整配置 27 个机场标题直达导航")
+
+service_sidebar_links = re.findall(r'<a href="#airport-card-[^"]+" class="sidebar-nav-link"[^>]*>(.*?)</a>', service_html)
+if len(service_sidebar_links) != 23:
+  errors.append(f"机场服务说明页面右侧侧边栏导航链接数量不等于 23，实际为: {len(service_sidebar_links)}")
+else:
+  print(f" [PASS] 机场服务说明落地页右侧侧边栏已完整配置全部 23 家其他机场标题导航")
 
 # --- 10. 汇总报告 ---
 print("\n==================================================")

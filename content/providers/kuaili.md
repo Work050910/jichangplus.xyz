@@ -11,7 +11,7 @@ rank: 13
 priceFrom: "19 元/月"
 trafficFrom: "120GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://kuaili.link/#/?code=aff_kuaili"
+inviteURL: "https://quanqiu.kuailicloud.cc/#/?code=vuYET5Qj"
 lastChecked: "2026-09-19"
 slug: "kuaili"
 bodyCharCount: 984

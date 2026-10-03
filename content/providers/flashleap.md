@@ -11,7 +11,7 @@ rank: 25
 priceFrom: "29 元/月"
 trafficFrom: "280GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://flashleap.com/#/?code=aff_flashleap"
+inviteURL: "https://vip02.flashleapaff.com/#/?code=bsjhVp9y"
 lastChecked: "2026-09-19"
 slug: "flashleap"
 bodyCharCount: 984

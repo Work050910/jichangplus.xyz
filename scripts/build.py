@@ -66,8 +66,8 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" sizes="192x192" href="/images/icon-192.png">
   <link rel="alternate" type="application/rss+xml" title="{BRAND} RSS" href="/rss.xml">
-  <link rel="stylesheet" href="/css/cleanwhite.css">
-  <script defer src="/js/main.js"></script>
+  <link rel="stylesheet" href="/css/cleanwhite.css?v=20260929v2">
+  <script defer src="/js/main.js?v=20260929v2"></script>
   {schema_script}
 </head>
 <body>
@@ -86,7 +86,7 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
             <input type="search" id="site-search-input" class="search-input" placeholder="搜索文章/技巧..." autocomplete="off">
             <div id="search-results" class="search-dropdown"></div>
           </div>
-          <a href="/service/" class="header-cta-btn">服务说明</a>
+          <a href="/service/" class="header-cta-btn">机场服务说明</a>
           <button class="menu-toggle" aria-expanded="false" aria-label="切换主导航菜单">☰ 菜单</button>
         </div>
       </div>
@@ -94,13 +94,8 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
         <ul class="nav-list">
           <li><a href="/" class="nav-link">首页</a></li>
           <li><a href="/recommend/" class="nav-link">机场推荐</a></li>
-          <li><a href="/series/" class="nav-link">系列导读</a></li>
-          <li><a href="/subscription-management/" class="nav-link">订阅管理</a></li>
-          <li><a href="/multi-device/" class="nav-link">多设备使用</a></li>
-          <li><a href="/traffic-nodes/" class="nav-link">流量与节点</a></li>
+          <li><a href="/service/" class="nav-link">机场服务说明</a></li>
           <li><a href="/client-tips/" class="nav-link">客户端技巧</a></li>
-          <li><a href="/safe-use/" class="nav-link">安全习惯</a></li>
-          <li><a href="/service/" class="nav-link">服务说明</a></li>
           <li><a href="/faq/" class="nav-link">常见问题</a></li>
           <li><a href="/about/" class="nav-link">关于本站</a></li>
         </ul>
@@ -130,12 +125,9 @@ def wrap_html(title, desc, canonical, h1, body_content, breadcrumbs=None, json_l
           <div class="footer-col-title">进阶专题</div>
           <ul class="footer-links">
             <li><a href="/recommend/">精选机场推荐</a></li>
-            <li><a href="/subscription-management/">订阅日常管理</a></li>
-            <li><a href="/multi-device/">多设备协同使用</a></li>
-            <li><a href="/traffic-nodes/">流量规划与节点</a></li>
+            <li><a href="/service/">机场服务说明</a></li>
             <li><a href="/client-tips/">客户端进阶技巧</a></li>
-            <li><a href="/safe-use/">安全使用常识</a></li>
-            <li><a href="/service/">自营与精选服务</a></li>
+            <li><a href="/faq/">常见问题解答</a></li>
           </ul>
         </div>
         <div class="footer-legal-col">
@@ -171,11 +163,27 @@ def write_page(rel_path, html_str):
     if u.endswith("//"): u = u[:-1]
     all_urls.append(u)
 
-def md_to_html(md_text):
+def format_inline_md(text):
+  def repl_link(m):
+    t, u = m.group(1), m.group(2)
+    if u.startswith("http") and "jichangplus.xyz" not in u and "localhost" not in u:
+      return f'<a href="{u}" target="_blank" rel="sponsored nofollow noopener" style="color:#2563eb; font-weight:600;">{t}</a>'
+    return f'<a href="{u}">{t}</a>'
+  res = re.sub(r"\[([^\]]+)\]\(([^\)]+)\)", repl_link, text)
+  res = re.sub(r"\*\*([^\*]+)\*\*", r"<strong>\1</strong>", res)
+  return res
+
+def slugify_heading(h_text):
+  clean = re.sub(r"[^\w\u4e00-\u9fff]+", "-", h_text).strip("-").lower()
+  return clean if clean else "sec"
+
+def md_to_html(md_text, return_headings=False):
   lines = md_text.strip().split("\n")
   html_lines = []
   in_ul = False
   in_ol = False
+  headings = []
+  h_counter = 0
   
   for line in lines:
     line_s = line.strip()
@@ -187,27 +195,31 @@ def md_to_html(md_text):
     if line_s.startswith("### "):
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
-      html_lines.append(f"<h3>{line_s[4:]}</h3>")
+      raw_h = line_s[4:].strip()
+      h_counter += 1
+      hid = f"airport-{slugify_heading(raw_h)}" if re.match(r"^\d+\.", raw_h) else f"h3-{h_counter}-{slugify_heading(raw_h)}"
+      headings.append((3, raw_h, hid))
+      html_lines.append(f'<h3 id="{hid}">{format_inline_md(raw_h)}</h3>')
     elif line_s.startswith("## "):
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
-      html_lines.append(f"<h2>{line_s[3:]}</h2>")
+      raw_h = line_s[3:].strip()
+      h_counter += 1
+      hid = f"sec-{h_counter}-{slugify_heading(raw_h)}"
+      headings.append((2, raw_h, hid))
+      html_lines.append(f'<h2 id="{hid}">{format_inline_md(raw_h)}</h2>')
     elif line_s.startswith("- "):
       if not in_ul:
         if in_ol: html_lines.append("</ol>"); in_ol = False
         html_lines.append("<ul>"); in_ul = True
       item_text = line_s[2:]
-      item_text = re.sub(r"\[([^\]]+)\]\(([^\)]+)\)", r"<a href='\2'>\1</a>", item_text)
-      item_text = re.sub(r"\*\*([^\*]+)\*\*", r"<strong>\1</strong>", item_text)
-      html_lines.append(f"<li>{item_text}</li>")
+      html_lines.append(f"<li>{format_inline_md(item_text)}</li>")
     elif re.match(r"^\d+\.\s", line_s):
       if not in_ol:
         if in_ul: html_lines.append("</ul>"); in_ul = False
         html_lines.append("<ol>"); in_ol = True
       item_text = re.sub(r"^\d+\.\s*", "", line_s)
-      item_text = re.sub(r"\[([^\]]+)\]\(([^\)]+)\)", r"<a href='\2'>\1</a>", item_text)
-      item_text = re.sub(r"\*\*([^\*]+)\*\*", r"<strong>\1</strong>", item_text)
-      html_lines.append(f"<li>{item_text}</li>")
+      html_lines.append(f"<li>{format_inline_md(item_text)}</li>")
     elif line_s.startswith("<div") or line_s.startswith("</div") or line_s.startswith("<h4") or line_s.startswith("<a") or line_s.startswith("<p"):
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
@@ -215,14 +227,49 @@ def md_to_html(md_text):
     else:
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
-      p_text = line_s
-      p_text = re.sub(r"\[([^\]]+)\]\(([^\)]+)\)", r"<a href='\2'>\1</a>", p_text)
-      p_text = re.sub(r"\*\*([^\*]+)\*\*", r"<strong>\1</strong>", p_text)
-      html_lines.append(f"<p>{p_text}</p>")
+      html_lines.append(f"<p>{format_inline_md(line_s)}</p>")
 
   if in_ul: html_lines.append("</ul>")
   if in_ol: html_lines.append("</ol>")
+  
+  if return_headings:
+    return "\n".join(html_lines), headings
   return "\n".join(html_lines)
+
+def build_right_sidebar(headings, sec_dir="", page_type=""):
+  if not headings:
+    return ""
+  
+  airport_items = [h for h in headings if h[0] == 3 and re.match(r"^\d+\.", h[1])]
+  if len(airport_items) >= 4:
+    sidebar_title = "✈️ 机场导航目录"
+    badge_text = f"{len(airport_items)} 家"
+  else:
+    sidebar_title = "📑 本文目录导航"
+    badge_text = f"{len(headings)} 节"
+  
+  items_html = ""
+  for level, text, hid in headings:
+    clean_text = re.sub(r"\*\*([^\*]+)\*\*", r"\1", text)
+    level_class = "toc-level-2" if level == 2 else "toc-level-3"
+    items_html += f'<li class="sidebar-nav-item {level_class}"><a href="#{hid}" class="sidebar-nav-link" data-target="{hid}" title="{clean_text}">{clean_text}</a></li>\n'
+    
+  return f"""<aside class="article-sidebar-right" aria-label="文章侧边栏导航">
+    <div class="sidebar-sticky-box">
+      <div class="sidebar-toc-header">
+        <span>{sidebar_title}</span>
+        <span class="sidebar-badge">{badge_text}</span>
+      </div>
+      <nav class="sidebar-toc-nav">
+        <ul class="sidebar-nav-list">
+          {items_html}
+        </ul>
+      </nav>
+      <div class="sidebar-quick-top">
+        <a href="#main-content" class="sidebar-back-top">⬆️ 返回顶部</a>
+      </div>
+    </div>
+  </aside>"""
 
 # Helper: Prominent 4-provider highlight box for articles
 def render_prominent_four_box():
@@ -280,11 +327,11 @@ def render_prominent_four_box():
         <span class="featured-badge">第四推荐 #4</span>
         <div class="featured-name">微风网络 (BreezeNet)</div>
       </div>
-      <div class="featured-price">以结算页为准</div>
+      <div class="featured-price">18 元/月 · 100GB</div>
       <div class="featured-positioning">轻量年付 · 预算敏感型</div>
       <div class="featured-desc">自研客户端与第三方订阅无缝导入，价格亲民，适合低频出差与轻度日常浏览。</div>
       <div style="margin-bottom: 12px; font-size: 0.8rem; background: #fff7ed; padding: 4px 8px; border-radius: 4px;">
-        优惠状态: <strong>结算页自动立减</strong>
+        优惠码: <strong>wf88</strong> (专属优惠)
       </div>
       <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent">👉 官网注册 / 查看当前套餐</a>
       <a href="/providers/breezenet/" class="featured-link-sub">查阅独立测评报告</a>
@@ -301,21 +348,23 @@ hero_text = (
 
 top4_cards = ""
 for p in providers[:4]:
-  top4_cards += f"""<div class="provider-card primary-rank">
+  top4_cards += f"""<div class="provider-card primary-rank rank-{p['rank']}">
     <div class="provider-card-header">
       <span class="provider-rank-badge">推荐 #{p['rank']}</span>
       <h3 class="provider-name">{p['name']}</h3>
     </div>
-    <div class="provider-price">{p['priceFrom']}</div>
-    <div class="provider-traffic">流量基准：{p['trafficFrom']}</div>
+    <div class="provider-price-row" style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+      <div class="provider-price" style="font-size: 1.25rem; font-weight: 800; color: #e11d48; white-space: nowrap;">{p['priceFrom']}</div>
+      <div class="provider-traffic" style="font-size: 0.84rem; color: #64748b; white-space: nowrap;">流量基准：{p['trafficFrom']}</div>
+    </div>
     <div class="provider-summary">{p['summary']}</div>
     <div class="provider-coupon-box">
       <span>优惠码: <strong class="coupon-code">{p['coupon']}</strong></span>
       <button class="coupon-copy-btn" data-coupon="{p['coupon']}">复制</button>
     </div>
-    <div class="provider-actions">
-      <a href="/providers/{p['slug']}/" class="btn-detail">查看 {p['name']} 测评</a>
-      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="flex:1.5; padding:8px 12px; font-size:0.85rem;">官网注册核对套餐</a>
+    <div class="provider-actions" style="display: flex; flex-direction: row; gap: 8px; align-items: center; width: 100%; margin-top: 14px;">
+      <a href="/providers/{p['slug']}/" class="btn-detail" title="查看 {p['name']} 独立测评" style="flex: 1 1 50%; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 8px 4px; background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; font-size: 0.85rem; font-weight: 600; border-radius: 6px; text-decoration: none; white-space: nowrap;">查看测评</a>
+      <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" title="前往 {p['name']} 官网注册" style="flex: 1 1 50%; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 8px 4px; background: #ffffff !important; color: #000000 !important; border: 1px solid #cbd5e1 !important; font-size: 0.85rem; font-weight: 700; border-radius: 6px; text-decoration: none; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.06);">官网注册</a>
     </div>
     <div class="provider-meta-footer">核验时间：{p['lastChecked']}</div>
   </div>"""
@@ -342,8 +391,7 @@ home_body = f"""<section class="hero-section">
     <p class="hero-description">{hero_text}</p>
     <div class="hero-actions">
       <a href="/recommend/" class="btn-primary">查看当前精选机场推荐榜</a>
-      <a href="/service/" class="btn-secondary">设备适配与服务说明</a>
-      <a href="/series/" class="btn-secondary">浏览全站系列学习地图</a>
+      <a href="/service/" class="btn-secondary">机场服务说明</a>
       <a href="/faq/" class="btn-secondary">查阅 100 常见问题解答</a>
     </div>
     <div class="hero-disclosure">披露说明：本站包含赞助邀请链接 (sponsored nofollow noopener)，所有排序与推荐依据真实核验记录与使用场景，价格以各结算页为准。</div>
@@ -397,16 +445,12 @@ home_body = f"""<section class="hero-section">
     </div>
     <div class="cards-grid">
       <div class="article-card">
-        <h3 class="article-card-title"><a href="/subscription-management/">订阅日常管理</a></h3>
-        <p class="article-card-summary">16 篇深度长文，涵盖订阅更新周期、失效清理、防泄露及多机场备用容灾架构。</p>
+        <h3 class="article-card-title"><a href="/recommend/">机场推荐精选指南</a></h3>
+        <p class="article-card-summary">10 篇高点击率深度长文，全网 27 家主流机场全维度横向评测，含线路、价格与官网直达。</p>
       </div>
       <div class="article-card">
-        <h3 class="article-card-title"><a href="/multi-device/">多设备协同使用</a></h3>
-        <p class="article-card-summary">14 篇进阶实战，解决 Windows、Mac、iPhone 与 Android 的规则同步与局域网共享。</p>
-      </div>
-      <div class="article-card">
-        <h3 class="article-card-title"><a href="/traffic-nodes/">流量规划与节点</a></h3>
-        <p class="article-card-summary">16 篇系统长文，看懂倍率计算、测速技巧、丢包抖动与地区出口匹配。</p>
+        <h3 class="article-card-title"><a href="/service/">机场服务说明</a></h3>
+        <p class="article-card-summary">全网精选 23 家服务详细说明、节点配置、流媒体与 AI 解锁能力及官网直达通道。</p>
       </div>
       <div class="article-card">
         <h3 class="article-card-title"><a href="/client-tips/">客户端进阶技巧</a></h3>
@@ -462,15 +506,23 @@ write_page("index.html", wrap_html(SITE_TITLE, profile["siteTopic"], DOMAIN + "/
 # --- 2. SECTION LANDING PAGES & EXPANDED ARTICLES ---
 sections = [
   ("recommend", "机场推荐", "机场推荐与精选评测", 10),
-  ("subscription-management", "订阅管理", "机场订阅管理", 16),
-  ("multi-device", "多设备使用", "机场多设备使用", 14),
-  ("traffic-nodes", "流量与节点", "机场流量管理", 16),
-  ("client-tips", "客户端技巧", "客户端使用技巧", 16),
-  ("safe-use", "安全习惯", "机场安全使用", 10),
-  ("service", "服务说明", "机场订阅服务", 6)
+  ("service", "机场服务说明", "机场服务说明与选型指南", 23),
+  ("client-tips", "客户端技巧", "客户端使用技巧", 16)
 ]
 
 prominent_box_html = render_prominent_four_box()
+
+other_slugs_list = [
+  'u1s1', 'jilian-cloud', 'guangnian-ti', 'guangsu-cloud', 'weitu-cloud',
+  'yuzhou-cloud', 'sujie', 'sogo-cloud', 'kuaili', 'ermao-cloud',
+  'yifan-cloud', 'edgenova', 'kexin-cloud', 'wavenet', 'laddercloud',
+  'lingdong-cloud', 'yinxingren', 'flyv', 'wuyou-link', 'civet-net',
+  'flashleap', 'firefly-net', 'kuajie-cloud'
+]
+other_provs = []
+for oslg in other_slugs_list:
+  op = next((p for p in providers if p['slug'] == oslg), None)
+  if op: other_provs.append(op)
 
 for sec_dir, sec_name, sec_kw, count in sections:
   nav_item = next(item for item in profile["navigationItems"] if sec_dir in item["url"])
@@ -479,32 +531,122 @@ for sec_dir, sec_name, sec_kw, count in sections:
   cards_html = ""
   for s_idx, title in enumerate(seeds, 1):
     art_slug = f"{sec_dir}-part-{s_idx:02d}"
-    cards_html += f"""<div class="article-card">
-      <span class="article-card-badge">第 {s_idx} 篇</span>
+    art_file_peek = f"content/{sec_dir}/{art_slug}.md"
+    card_words = "约 1500 字"
+    card_summary = f"围绕【{sec_kw}】与性价比机场选择展开的步骤化深度长文，提供落地实操与防踩坑指南。"
+    extra_action_html = ""
+    
+    if sec_dir == "recommend" and s_idx == 1:
+      card_words = "约 6800 字（全网27家大盘点）"
+      card_summary = "本专栏核心支柱长文：全网 27 家主流机场全维度横向评测档案，涵盖价格、专线节点、适用场景、解锁 AI 与流媒体能力及官网注册直达。"
+    elif sec_dir == "service":
+      p_obj = other_provs[s_idx - 1] if s_idx <= len(other_provs) else None
+      p_name = p_obj["name"] if p_obj else title
+      p_price = p_obj.get("priceFrom", "20 元/月") if p_obj else "详见官网"
+      p_traffic = p_obj.get("trafficFrom", "100GB/月") if p_obj else ""
+      p_coupon = p_obj.get("coupon", "暂无优惠码") if p_obj else "暂无"
+      p_invite = p_obj["inviteURL"] if p_obj else "#"
+      card_words = f"起步：{p_price}"
+      card_summary = f"【{p_name}】详细服务说明与配置评测：入门价格 {p_price} · {p_traffic}，优惠码【{p_coupon}】。支持常用 AI 与海外 4K 流媒体解锁，包含节点覆盖与客户端配置实操。"
+      extra_action_html = f'''<div style="margin-top: 14px; display: flex; gap: 10px; align-items: center;">
+        <a href="{p_invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-primary btn-reg-prominent" style="padding: 6px 14px; font-size: 13px; text-decoration: none; border-radius: 4px;">👉 官网注册</a>
+        <a href="/{sec_dir}/{art_slug}/" class="btn-secondary" style="padding: 6px 14px; font-size: 13px; text-decoration: none; border-radius: 4px;">服务说明</a>
+      </div>'''
+    elif os.path.exists(art_file_peek):
+      with open(art_file_peek, "r", encoding="utf-8") as f_peek:
+        c_peek = f_peek.read()
+      cn_p = len([c for c in c_peek if "一" <= c <= "鿿"])
+      card_words = f"约 {cn_p} 字"
+      m_desc = re.search(r'description:\s*["\']?([^"\']+)["\']?', c_peek)
+      if m_desc:
+        card_summary = m_desc.group(1).strip()
+
+    badge_text = f"精选服务 {s_idx:02d}" if sec_dir == "service" else f"第 {s_idx} 篇"
+    card_id_attr = f' id="airport-card-{s_idx:02d}"' if sec_dir == "service" else ""
+    cards_html += f"""<div class="article-card"{card_id_attr}>
+      <span class="article-card-badge">{badge_text}</span>
       <h3 class="article-card-title"><a href="/{sec_dir}/{art_slug}/">{title}</a></h3>
-      <p class="article-card-summary">围绕【{sec_kw}】与性价比机场选择展开的步骤化深度长文，提供落地实操与防踩坑指南。</p>
+      <p class="article-card-summary">{card_summary}</p>
       <div class="article-card-meta">
-        <span>更新：2026-09-26</span>
-        <span>字数：约 1500 字</span>
+        <span>更新：2026-09-28</span>
+        <span>{card_words}</span>
       </div>
+      {extra_action_html}
     </div>"""
 
   extra_box = prominent_box_html if sec_dir == "recommend" else ""
-  sec_h1 = f"{sec_name}精选指南与横向评测" if sec_dir == "recommend" else f"{sec_name}进阶系列教程"
-  sec_lead = f"本专栏系统收录 {len(seeds)} 篇高点击率深度长文，围绕性价比机场推荐、便宜机场、稳定专线、Clash 机场及多设备协同，提供落地实操与防踩坑选型指南。" if sec_dir == "recommend" else f"本专栏收录 {len(seeds)} 篇深度进阶长文，围绕“{sec_kw}”核心意图，系统建立条理分明的日常网络使用与管理体系。"
+  if sec_dir == "service":
+    sec_h1 = "机场服务说明"
+    sec_lead = "收录全网主流精选 23 家机场服务详细说明、节点配置、流媒体与AI解锁能力、套餐资费及官方直达注册通道，助你全面掌握各服务商核心特性与适用场景。"
 
-  sec_content = f"""<section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h1 class="section-title">{sec_h1}</h1>
-        <p class="section-desc">{sec_lead}</p>
+    service_sidebar_items = ""
+    for s_idx, title in enumerate(seeds, 1):
+      p_obj = other_provs[s_idx - 1] if s_idx <= len(other_provs) else None
+      p_name = p_obj["name"] if p_obj else f"服务 {s_idx:02d}"
+      service_sidebar_items += f'<li class="sidebar-nav-item"><a href="#airport-card-{s_idx:02d}" class="sidebar-nav-link" title="{s_idx:02d}. {p_name}">{s_idx:02d}. {p_name}</a></li>\n'
+    
+    service_sidebar_html = f"""<aside class="article-sidebar-right" aria-label="机场服务导航">
+      <div class="sidebar-sticky-box">
+        <div class="sidebar-toc-header">
+          <span>✈️ 机场导航目录</span>
+          <span class="sidebar-badge">{len(seeds)} 家</span>
+        </div>
+        <nav class="sidebar-toc-nav">
+          <ul class="sidebar-nav-list">
+            {service_sidebar_items}
+          </ul>
+        </nav>
+        <div class="sidebar-quick-top">
+          <a href="#main-content" class="sidebar-back-top">⬆️ 返回顶部</a>
+        </div>
       </div>
-      {extra_box}
-      <div class="cards-grid" style="margin-top: 24px;">
-        {cards_html}
+    </aside>"""
+
+    sec_content = f"""<section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">{sec_h1}</h1>
+          <p class="section-desc">{sec_lead}</p>
+        </div>
+        <div class="article-layout" style="margin-top: 24px; padding: 0;">
+          <div class="article-content-main">
+            <div class="cards-grid">
+              {cards_html}
+            </div>
+          </div>
+          {service_sidebar_html}
+        </div>
       </div>
-    </div>
-  </section>"""
+    </section>"""
+  elif sec_dir == "recommend":
+    sec_h1 = f"{sec_name}精选指南与横向评测"
+    sec_lead = f"本专栏系统收录 {len(seeds)} 篇高点击率深度长文，围绕性价比机场推荐、便宜机场、稳定专线、Clash 机场及多设备协同，提供落地实操与防踩坑选型指南。"
+    sec_content = f"""<section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">{sec_h1}</h1>
+          <p class="section-desc">{sec_lead}</p>
+        </div>
+        {extra_box}
+        <div class="cards-grid" style="margin-top: 24px;">
+          {cards_html}
+        </div>
+      </div>
+    </section>"""
+  else:
+    sec_h1 = f"{sec_name}进阶系列教程"
+    sec_lead = f"本专栏收录 {len(seeds)} 篇深度进阶长文，围绕“{sec_kw}”核心意图，系统建立条理分明的日常网络使用与管理体系。"
+    sec_content = f"""<section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">{sec_h1}</h1>
+          <p class="section-desc">{sec_lead}</p>
+        </div>
+        <div class="cards-grid" style="margin-top: 24px;">
+          {cards_html}
+        </div>
+      </div>
+    </section>"""
 
   sec_bc = [("首页", "/"), (sec_name, "")]
   write_page(f"{sec_dir}/index.html", wrap_html(f"{sec_name}｜{BRAND}", f"JichangPlus 机场加{sec_name}专栏，系统收录 {count} 篇进阶深度长文。", f"{DOMAIN}/{sec_dir}/", sec_h1, sec_content, breadcrumbs=sec_bc))
@@ -515,71 +657,69 @@ for sec_dir, sec_name, sec_kw, count in sections:
     with open(art_file, "r", encoding="utf-8") as f:
       raw = f.read()
     
-    parts = raw.split("---")
+    parts = re.split(r"^---\s*$", raw, maxsplit=2, flags=re.MULTILINE)
     content_raw = parts[2] if len(parts) > 2 else raw
     content_lines = [l for l in content_raw.split("\n") if not l.startswith("# ")]
+    body_cn = len([c for c in content_raw if "一" <= c <= "鿿"])
     
-    # Inject high-CTR keywords into the article body
-    seo_expanded_intro = f"""
-> **关键词聚焦**：性价比机场推荐、Clash 机场配置、便宜机场与稳定机场选择、专线机场测速、多设备订阅管理。
+    meta = {}
+    if len(parts) > 2:
+      for m_line in parts[1].strip().split("\n"):
+        if ":" in m_line:
+          mk, mv = m_line.split(":", 1)
+          meta[mk.strip()] = mv.strip().strip('"').strip("'")
+    
+    art_desc = meta.get("description", f"深入探讨{title}，提供条理分明的专业进阶配置与选型指南。")
+    art_kw = meta.get("primaryKeyword", title)
+    art_tags = meta.get("tags", "")
 
-在当前网络工具的日常维护与进阶使用中，面对【{title}】这一高频核心问题，许多读者经常在性价比机场与稳定机场之间陷入选择纠结。事实上，一个优秀的网络连接方案不仅取决于服务商线路本身的延迟表现，更与本地客户端的分流规则优化、节点定期核验及多设备协同习惯息息相关。为了帮助你以最低时间成本获得顺畅稳定的连接，本文将结合主流客户端（如 Clash、sing-box、Shadowrocket）的最佳实践，为你系统拆解可落地的管理动作。
-"""
-    full_content_text = seo_expanded_intro + "\n\n" + "\n".join(content_lines)
-    rendered_body = md_to_html(full_content_text)
+    full_content_text = "\n".join(content_lines)
+    rendered_body, article_headings = md_to_html(full_content_text, return_headings=True)
+    right_sidebar_html = build_right_sidebar(article_headings, sec_dir=sec_dir)
     
     # Add to client search index
     search_index.append({
       "title": title,
-      "desc": f"深入探讨{title}，涵盖性价比机场推荐、Clash节点调优与多设备协同指南。",
+      "desc": art_desc,
       "url": f"/{sec_dir}/{art_slug}/",
-      "keywords": f"{sec_kw} 性价比机场 便宜机场 稳定机场 Clash机场 节点管理 订阅更新"
+      "keywords": f"{art_kw} {sec_name} {title} {art_tags}"
     })
 
     art_page_html = f"""<article class="article-page">
-      <div class="container article-container">
-        <header class="article-header">
-          <div class="article-category">{sec_name}专栏 · 系列进阶</div>
-          <h1 class="article-title">{title}</h1>
-          <div class="article-meta">
-            <span>作者：JichangPlus 编辑团队</span>
-            <span>更新时间：2026-09-23</span>
-            <span>字数：约 1580 字 (小于 2500 字)</span>
+      <div class="article-layout">
+        <div class="article-content-main">
+          <header class="article-header">
+            <div class="article-category">{sec_name}专栏 · 深度指南</div>
+            <h1 class="article-title">{title}</h1>
+            <div class="article-meta">
+              <span>作者：JichangPlus 编辑团队</span>
+              <span>更新时间：2026-09-28</span>
+              <span>字数：约 {body_cn} 字</span>
+            </div>
+          </header>
+
+          <div class="series-box">
+            <div class="series-box-title">所属专栏：{sec_name}（第 {s_idx} / {len(seeds)} 篇）</div>
+            <div>本专栏汇总全网精选主流机场服务详细说明、节点配置、流媒体与AI解锁能力、套餐资费及官方直达注册通道。交流频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a>。</div>
           </div>
-        </header>
 
-        <div class="series-box">
-          <div class="series-box-title">所属系列：{sec_name}系列（第 {s_idx} / {len(seeds)} 篇）</div>
-          <div>本系列系统建立网络工具日常管理与进阶技巧，建议按顺序阅读；官方交流群：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a>。</div>
-        </div>
-
-        <div class="toc-box">
-          <div class="toc-title">目录导航</div>
-          <ul>
-            <li><a href="#section-1">导读与核心结论</a></li>
-            <li><a href="#section-2">适用对象与开始前准备</a></li>
-            <li><a href="#section-3">详细步骤与进阶配置指南</a></li>
-            <li><a href="#section-4">核心推荐服务深度对比与官网直达</a></li>
-            <li><a href="#section-5">常见误区与维护建议</a></li>
-            <li><a href="#section-6">常见问题解答 (FAQ)</a></li>
-          </ul>
-        </div>
-
-        <div class="article-body">
-          {rendered_body}
-          {prominent_box_html}
-        </div>
-
-        <div class="post-nav">
-          <div class="post-nav-item">
-            <div class="post-nav-label">所属专栏</div>
-            <div class="post-nav-title"><a href="/{sec_dir}/">返回【{sec_name}】专栏目录</a></div>
+          <div class="article-body">
+            {rendered_body}
+            {prominent_box_html}
           </div>
-          <div class="post-nav-item" style="text-align: right;">
-            <div class="post-nav-label">常见问题</div>
-            <div class="post-nav-title"><a href="/faq/">查阅【常见问题】解答中心</a></div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+              <div class="post-nav-label">所属专栏</div>
+              <div class="post-nav-title"><a href="/{sec_dir}/">返回【{sec_name}】专栏目录</a></div>
+            </div>
+            <div class="post-nav-item" style="text-align: right;">
+              <div class="post-nav-label">常见问题</div>
+              <div class="post-nav-title"><a href="/faq/">查阅【常见问题】解答中心</a></div>
+            </div>
           </div>
         </div>
+        {right_sidebar_html}
       </div>
     </article>"""
 
@@ -593,7 +733,7 @@ for sec_dir, sec_name, sec_kw, count in sections:
       "author": {"@type": "Organization", "name": BRAND},
       "publisher": {"@type": "Organization", "name": BRAND}
     }
-    write_page(f"{sec_dir}/{art_slug}/index.html", wrap_html(f"{title}｜{BRAND}", f"深入探讨{title}，涵盖性价比机场推荐、Clash节点调优与多设备协同指南。", f"{DOMAIN}/{sec_dir}/{art_slug}/", title, art_page_html, breadcrumbs=art_bc, json_ld=art_ld))
+    write_page(f"{sec_dir}/{art_slug}/index.html", wrap_html(f"{title}｜{BRAND}", art_desc, f"{DOMAIN}/{sec_dir}/{art_slug}/", title, art_page_html, breadcrumbs=art_bc, json_ld=art_ld))
 
 # --- 3. PROVIDER REVIEW PAGES ---
 prov_cards_all = ""
@@ -609,72 +749,66 @@ for p in providers:
   
   with open(f"content/providers/{slug}.md", "r", encoding="utf-8") as f:
     raw = f.read()
-  parts = raw.split("---")
+  parts = re.split(r"^---\s*$", raw, maxsplit=2, flags=re.MULTILINE)
   content_raw = parts[2] if len(parts) > 2 else raw
   content_lines = [l for l in content_raw.split("\n") if not l.startswith("# ")]
-  
-  seo_prov_extra = f"""
-> **评测关键词**：{name}机场测评、性价比机场推荐、便宜机场、稳定专线机场、Clash 机场订阅。
 
-在针对各类服务商进行横向对比与测评时，{name}凭借其明确的套餐梯度与相对稳定的节点网络，成为了许多用户关注的候选方案。无论是用于日常网页浏览、远程办公协作，还是作为家庭多设备备用订阅，核查其真实带宽、晚高峰表现与退款条款都至关重要。
-"""
-  full_prov_content = seo_prov_extra + "\n\n" + "\n".join(content_lines)
-  rendered_body = md_to_html(full_prov_content)
+  meta = {}
+  if len(parts) > 2:
+    for m_line in parts[1].strip().split("\n"):
+      if ":" in m_line:
+        mk, mv = m_line.split(":", 1)
+        meta[mk.strip()] = mv.strip().strip('"').strip("'")
+  
+  prov_desc = meta.get("description", f"{name}怎么样？本篇详尽评测{name}的参考价格、套餐梯度、节点线路分布及购买前注意事项。")
+  full_prov_content = "\n".join(content_lines)
+  rendered_body, prov_headings = md_to_html(full_prov_content, return_headings=True)
+  prov_sidebar_html = build_right_sidebar(prov_headings, page_type="provider")
   
   search_index.append({
     "title": f"{name}机场测评：价格、套餐、节点与适合人群",
-    "desc": f"{name}怎么样？详尽评测{name}的价格、套餐、节点线路分布及购买前注意事项。",
+    "desc": prov_desc,
     "url": f"/providers/{slug}/",
-    "keywords": f"{name} 机场测评 性价比机场 便宜机场 稳定机场 专线机场"
+    "keywords": f"{name} {name}机场测评 {name}优惠码 {name}官网 {name}套餐"
   })
 
   prov_h1 = f"{name}机场测评：价格、套餐、节点与适合人群"
   prov_page_html = f"""<article class="article-page">
-    <div class="container article-container">
-      <header class="article-header">
-        <div class="article-category">服务商测评库 · 推荐排名 #{rank}</div>
-        <h1 class="article-title">{prov_h1}</h1>
-        <div class="article-meta">
-          <span>参考价格：{price}</span>
-          <span>基准流量：{traffic}</span>
-          <span>核验时间：{last_checked}</span>
-          <span>官方频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a></span>
-        </div>
-      </header>
+    <div class="article-layout">
+      <div class="article-content-main">
+        <header class="article-header">
+          <div class="article-category">服务商测评库 · 推荐排名 #{rank}</div>
+          <h1 class="article-title">{prov_h1}</h1>
+          <div class="article-meta">
+            <span>参考价格：{price}</span>
+            <span>基准流量：{traffic}</span>
+            <span>核验时间：{last_checked}</span>
+            <span>官方频道：<a href="{TG_CHANNEL}" target="_blank" rel="noopener nofollow">Telegram 频道</a></span>
+          </div>
+        </header>
 
-      <div class="toc-box">
-        <div class="toc-title">目录导航</div>
-        <ul>
-          <li><a href="#section-1">核心结论与服务定位</a></li>
-          <li><a href="#section-2">当前参考价格与套餐体系</a></li>
-          <li><a href="#section-3">线路节点与技术协议兼容</a></li>
-          <li><a href="#section-4">适用人群与不适用场景分析</a></li>
-          <li><a href="#section-5">购买前核验与避坑指南</a></li>
-          <li><a href="#section-6">四大核心主推服务横向对比</a></li>
-          <li><a href="#section-7">常见问题解答 (FAQ)</a></li>
-        </ul>
-      </div>
-
-      <div class="article-body">
-        {rendered_body}
-        <div style="background:#eff6ff; border:2px solid #93c5fd; border-radius:10px; padding:24px; margin:36px 0; text-align:center;">
-          <h3 style="margin-bottom:8px; font-weight:800; color:#1e40af;">前往 {name} 官方网站核验与注册</h3>
-          <p style="font-size:0.9rem; color:#475569; margin-bottom:18px;">优惠码：<strong style="color:#2563eb;">{coupon}</strong> ｜ 核验日期：{last_checked} ｜ 请以当前结算页数据为准</p>
-          <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="max-width:320px; margin:0 auto; font-size:1.05rem;">👉 官网注册 / 查看当前套餐</a>
+        <div class="article-body">
+          {rendered_body}
+          <div style="background:#eff6ff; border:2px solid #93c5fd; border-radius:10px; padding:24px; margin:36px 0; text-align:center;">
+            <h3 style="margin-bottom:8px; font-weight:800; color:#1e40af;">前往 {name} 官方网站核验与注册</h3>
+            <p style="font-size:0.9rem; color:#475569; margin-bottom:18px;">优惠码：<strong style="color:#2563eb;">{coupon}</strong> ｜ 核验日期：{last_checked} ｜ 请以当前结算页数据为准</p>
+            <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="max-width:320px; margin:0 auto; font-size:1.05rem;">👉 官网注册 / 查看当前套餐</a>
+          </div>
+          {prominent_box_html}
         </div>
-        {prominent_box_html}
-      </div>
 
-      <div class="post-nav">
-        <div class="post-nav-item">
-          <div class="post-nav-label">服务总览</div>
-          <div class="post-nav-title"><a href="/providers/">返回【服务资料库】目录</a></div>
-        </div>
-        <div class="post-nav-item" style="text-align: right;">
-          <div class="post-nav-label">服务说明</div>
-          <div class="post-nav-title"><a href="/service/">查看【服务说明与适配指南】</a></div>
+        <div class="post-nav">
+          <div class="post-nav-item">
+            <div class="post-nav-label">服务总览</div>
+            <div class="post-nav-title"><a href="/providers/">返回【服务资料库】目录</a></div>
+          </div>
+          <div class="post-nav-item" style="text-align: right;">
+            <div class="post-nav-label">服务说明</div>
+            <div class="post-nav-title"><a href="/service/">查看【机场服务说明】</a></div>
+          </div>
         </div>
       </div>
+      {prov_sidebar_html}
     </div>
   </article>"""
 
@@ -687,23 +821,25 @@ for p in providers:
     "dateModified": "2026-09-23",
     "author": {"@type": "Organization", "name": BRAND}
   }
-  write_page(f"providers/{slug}/index.html", wrap_html(f"{name}机场测评｜{BRAND}", f"{name}怎么样？本篇详尽评测{name}的价格、套餐、节点与注意事项。", f"{DOMAIN}/providers/{slug}/", prov_h1, prov_page_html, breadcrumbs=prov_bc, json_ld=prov_ld))
+  write_page(f"providers/{slug}/index.html", wrap_html(f"{name}机场测评｜{BRAND}", prov_desc, f"{DOMAIN}/providers/{slug}/", prov_h1, prov_page_html, breadcrumbs=prov_bc, json_ld=prov_ld))
 
   prov_cards_all += f"""<div class="provider-card">
     <div class="provider-card-header">
       <span class="provider-rank-badge">排名 #{rank}</span>
       <h3 class="provider-name">{name}</h3>
     </div>
-    <div class="provider-price">{price}</div>
-    <div class="provider-traffic">流量基准：{traffic}</div>
+    <div class="provider-price-row" style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+      <div class="provider-price" style="font-size: 1.25rem; font-weight: 800; color: #e11d48; white-space: nowrap;">{price}</div>
+      <div class="provider-traffic" style="font-size: 0.84rem; color: #64748b; white-space: nowrap;">流量基准：{traffic}</div>
+    </div>
     <div class="provider-summary">{p['summary']}</div>
     <div class="provider-coupon-box">
       <span>优惠码: <strong class="coupon-code">{coupon}</strong></span>
       <button class="coupon-copy-btn" data-coupon="{coupon}">复制</button>
     </div>
-    <div class="provider-actions">
-      <a href="/providers/{slug}/" class="btn-detail">查看测评</a>
-      <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="flex:1.4; padding:8px 10px; font-size:0.85rem;">官网注册</a>
+    <div class="provider-actions" style="display: flex; flex-direction: row; gap: 8px; align-items: center; width: 100%; margin-top: 14px;">
+      <a href="/providers/{slug}/" class="btn-detail" style="flex: 1 1 50%; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 8px 4px; background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; font-size: 0.85rem; font-weight: 600; border-radius: 6px; text-decoration: none; white-space: nowrap;">查看测评</a>
+      <a href="{invite}" target="_blank" rel="sponsored nofollow noopener" class="btn-reg-prominent" style="flex: 1 1 50%; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 8px 4px; background: #ffffff !important; color: #000000 !important; border: 1px solid #cbd5e1 !important; font-size: 0.85rem; font-weight: 700; border-radius: 6px; text-decoration: none; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.06);">官网注册</a>
     </div>
   </div>"""
 
@@ -767,21 +903,7 @@ for pno in range(1, total_faq_pages + 1):
   faq_bc = [("首页", "/"), ("常见问题", "/faq/")] if pno > 1 else [("首页", "/"), ("常见问题", "")]
   write_page(rel_faq_path, wrap_html(f"常见问题中心 (第 {pno} 页)｜{BRAND}", "JichangPlus 机场加常见问题解答中心，提供 100 个高频进阶疑问的标准解答与指南内链。", canonical_faq, f"常见问题中心 (FAQ) - 第 {pno} 页 (已全部展开)", faq_page_content, breadcrumbs=faq_bc))
 
-# --- 5. SERIES & LEGAL PAGES ---
-with open("content/series/_index.md", "r", encoding="utf-8") as f:
-  raw = f.read()
-parts = raw.split("---")
-rendered_series = md_to_html(parts[2] if len(parts) > 2 else raw)
-series_page_html = f"""<section class="section">
-  <div class="container article-container">
-    <h1 class="section-title">JichangPlus 机场加系列教程学习地图</h1>
-    <div class="article-body">
-      {rendered_series}
-    </div>
-  </div>
-</section>"""
-write_page("series/index.html", wrap_html(f"系列导读与学习地图｜{BRAND}", "JichangPlus 机场加系统系列教程导读，梳理从订阅管理到客户端调优的完整学习路径。", f"{DOMAIN}/series/", "JichangPlus 机场加系列教程学习地图", series_page_html, breadcrumbs=[("首页", "/"), ("系列导读", "")]))
-
+# --- 5. LEGAL PAGES ---
 legal_slugs = ["about", "contact", "editorial-policy", "methodology", "corrections", "affiliate-disclosure", "privacy", "terms", "disclaimer"]
 for lslug in legal_slugs:
   with open(f"content/{lslug}/_index.md", "r", encoding="utf-8") as f:
@@ -817,7 +939,7 @@ page_404 = wrap_html(f"404 页面未找到｜{BRAND}", "很抱歉，您访问的
     <h1 class="section-title">404 - 页面未找到</h1>
     <p class="section-desc" style="margin-bottom: 24px;">您所寻找的文章或专栏可能已更新或迁移路径。</p>
     <a href="/" class="btn-primary">返回首页</a>
-    <a href="/series/" class="btn-secondary" style="margin-left: 10px;">查阅系列导读</a>
+    <a href="/service/" class="btn-secondary" style="margin-left: 10px;">查看机场服务说明</a>
   </div>
 </section>""")
 write_page("404.html", page_404)

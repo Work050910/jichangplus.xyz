@@ -11,7 +11,7 @@ rank: 17
 priceFrom: "26 元/月"
 trafficFrom: "220GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://kexin.cloud/#/?code=aff_kexin"
+inviteURL: "https://quanqiu.kosingaff.com/#/?code=NRG0tXKO"
 lastChecked: "2026-09-19"
 slug: "kexin-cloud"
 bodyCharCount: 988

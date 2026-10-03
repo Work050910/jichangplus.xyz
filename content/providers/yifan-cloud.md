@@ -11,7 +11,7 @@ rank: 15
 priceFrom: "15 元/月"
 trafficFrom: "80GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://yifan.cloud/#/?code=aff_yifan"
+inviteURL: "https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4"
 lastChecked: "2026-09-19"
 slug: "yifan-cloud"
 bodyCharCount: 988

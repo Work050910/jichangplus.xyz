@@ -11,7 +11,7 @@ rank: 24
 priceFrom: "25 元/月"
 trafficFrom: "200GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://civet.net/#/?code=aff_civet"
+inviteURL: "https://vip02.civetaff.com/#/?code=MLVZXxQj"
 lastChecked: "2026-09-19"
 slug: "civet-net"
 bodyCharCount: 992

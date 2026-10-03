@@ -11,7 +11,7 @@ rank: 21
 priceFrom: "27 元/月"
 trafficFrom: "200GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://yinxingren.net/#/?code=aff_yinxingren"
+inviteURL: "https://yinxingren1.invisibleaff.com/#/?code=ISH1y2IF"
 lastChecked: "2026-09-19"
 slug: "yinxingren"
 bodyCharCount: 988

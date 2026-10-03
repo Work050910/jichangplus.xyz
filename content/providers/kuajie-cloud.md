@@ -11,7 +11,7 @@ rank: 27
 priceFrom: "32 元/月"
 trafficFrom: "300GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://kuajie.cloud/#/?code=aff_kuajie"
+inviteURL: "https://vip02.kuajieaff.com/#/?code=Qu0GQkhP"
 lastChecked: "2026-09-19"
 slug: "kuajie-cloud"
 bodyCharCount: 988

@@ -11,7 +11,7 @@ rank: 11
 priceFrom: "28 元/月"
 trafficFrom: "250GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://sujie.link/#/?code=aff_sujie"
+inviteURL: "https://quanqiu.speedworldaff.cc/#/?code=kY825Zat"
 lastChecked: "2026-09-19"
 slug: "sujie"
 bodyCharCount: 984

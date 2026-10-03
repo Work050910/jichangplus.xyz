@@ -11,7 +11,7 @@ rank: 19
 priceFrom: "18 元/月"
 trafficFrom: "100GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://laddercloud.cc/#/?code=aff_ladder"
+inviteURL: "https://tiziyun3.ladderaff.com/#/?code=wI00rGj2"
 lastChecked: "2026-09-19"
 slug: "laddercloud"
 bodyCharCount: 988

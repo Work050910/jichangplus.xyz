@@ -11,7 +11,7 @@ rank: 7
 priceFrom: "18 元/月"
 trafficFrom: "120GB/月"
 coupon: "暂无优惠码"
-inviteURL: "https://guangnian.ti/#/?code=aff_guangnian"
+inviteURL: "https://quanqiu.gntaff.com/#/?code=qUJeOegs"
 lastChecked: "2026-09-19"
 slug: "guangnian-ti"
 bodyCharCount: 988
