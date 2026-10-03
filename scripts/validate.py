@@ -402,6 +402,35 @@ if len(service_sidebar_links) != 23:
 else:
   print(f" [PASS] 机场服务说明落地页右侧侧边栏已完整配置全部 23 家其他机场标题导航")
 
+# K. 全站内部链接目标存在性检查
+print("\n正在验证全部 HTML 内部链接目标...")
+internal_links_checked = 0
+missing_internal_links = []
+for hf in html_files:
+  with open(hf, "r", encoding="utf-8") as f:
+    content = f.read()
+  for href in re.findall(r'href=["\']([^"\']+)', content, re.IGNORECASE):
+    clean_href = href.split("#", 1)[0].split("?", 1)[0]
+    if not clean_href or not clean_href.startswith("/") or clean_href.startswith("//"):
+      continue
+    internal_links_checked += 1
+    if clean_href == "/":
+      target = "public/index.html"
+    elif os.path.splitext(clean_href.rstrip("/"))[1]:
+      target = os.path.join("public", clean_href.lstrip("/"))
+    else:
+      target = os.path.join("public", clean_href.lstrip("/"), "index.html")
+    if not os.path.isfile(target):
+      missing_internal_links.append(f"{hf} -> {clean_href}")
+
+if missing_internal_links:
+  errors.append(
+    f"发现 {len(missing_internal_links)} 个失效内部链接: "
+    + "; ".join(missing_internal_links[:20])
+  )
+else:
+  print(f" [PASS] 已核验 {internal_links_checked} 个内部链接，目标文件全部存在")
+
 # --- 10. 汇总报告 ---
 print("\n==================================================")
 if errors:

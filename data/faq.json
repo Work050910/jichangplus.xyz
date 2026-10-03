@@ -12,7 +12,7 @@
     "answer": "【建议】月付试用，勿直接长付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-01",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-01",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -44,7 +44,7 @@
     "answer": "【建议】轻度注重平价年付，重度注重晚高峰带宽。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-03",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-03",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -60,7 +60,7 @@
     "answer": "【建议】核查设备并发上限与IP归属策略。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-04",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -92,7 +92,7 @@
     "answer": "【建议】选择不同入口机房与结算周期的平价套餐。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-06",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -124,7 +124,7 @@
     "answer": "【建议】通过晚高峰丢包测试与社区评价观察。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-08",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -140,7 +140,7 @@
     "answer": "【建议】必须配备独享纯净静态IP并隔离浏览器环境。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-09",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-09",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -172,7 +172,7 @@
     "answer": "【建议】预装两套以上独立订阅并保持离线配置。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-11",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-11",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -188,7 +188,7 @@
     "answer": "【建议】入口机房波动不可避免，双订阅互备最稳。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-12",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-12",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -236,7 +236,7 @@
     "answer": "【建议】确保服务商提供Clash、Surge或sing-box通用链接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-15",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-15",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -268,7 +268,7 @@
     "answer": "【建议】只做短期尝鲜，切勿存储主账号或敏感凭据。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "rec-17",
     "canonicalTarget": "https://jichangplus.xyz/faq/#rec-17",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -316,7 +316,7 @@
     "answer": "【建议】检查系统时间同步、订阅链接有效性及网络代理。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-02",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -380,7 +380,7 @@
     "answer": "【建议】使用节点重命名规则或 Sub-Store 统一管理。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-06",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -396,7 +396,7 @@
     "answer": "【建议】定期探测消耗极低，但测速并发会产生突发请求。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-07",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -412,7 +412,7 @@
     "answer": "【建议】在通用设置中勾选 Start with Windows 并最小化。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-08",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -428,7 +428,7 @@
     "answer": "【建议】授予辅助功能与网络系统扩展权限以启用TUN。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-09",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-09",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -444,7 +444,7 @@
     "answer": "【建议】使用代码编辑器排查缩进，或还原备份yaml文件。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-10",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-10",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -492,7 +492,7 @@
     "answer": "【建议】建立不同配置文件随时切换，或做订阅聚合。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "clash-13",
     "canonicalTarget": "https://jichangplus.xyz/faq/#clash-13",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -572,7 +572,7 @@
     "answer": "【建议】CPU占用极低，极适合路由器与老旧手机运行。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "ss-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#ss-04",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -588,7 +588,7 @@
     "answer": "【建议】结合 GEOIP 与域名列表实现国内直连海外走SS。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "ss-05",
     "canonicalTarget": "https://jichangplus.xyz/faq/#ss-05",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -620,7 +620,7 @@
     "answer": "【建议】通过在线泄漏测试平台核实出口DNS是否为海外。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "ss-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#ss-07",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -668,7 +668,7 @@
     "answer": "【建议】Base64包裹密码加密方式，便于客户端一键导入。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "ss-10",
     "canonicalTarget": "https://jichangplus.xyz/faq/#ss-10",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -700,7 +700,7 @@
     "answer": "【建议】必须具备受信任机构签发的域名证书才能握手。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-02",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -732,7 +732,7 @@
     "answer": "【建议】Clash、Stash、sing-box 均原生稳定支持。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-04",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -780,7 +780,7 @@
     "answer": "【建议】TLS三次握手较长，适度配合多路复用可降低延迟。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-07",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -796,7 +796,7 @@
     "answer": "【建议】务必开启证书安全校验，切勿跳过跳板认证。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-08",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -812,7 +812,7 @@
     "answer": "【建议】支持多连接，性能受限于服务端线程与系统限制。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-09",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-09",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -828,7 +828,7 @@
     "answer": "【建议】底层基于 TCP，专线保障下非常稳定顺畅。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "trojan-10",
     "canonicalTarget": "https://jichangplus.xyz/faq/#trojan-10",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -860,7 +860,7 @@
     "answer": "【建议】保护账户隐私，不访问非法网站，不传敏感凭证。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-02",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -876,7 +876,7 @@
     "answer": "【建议】免费工具常插入广告、倒卖日志甚至植入恶意脚本。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-03",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-03",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -908,7 +908,7 @@
     "answer": "【建议】中立技术用于正规跨国业务，违规用途需严防。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-05",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-05",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -924,7 +924,7 @@
     "answer": "【建议】禁止下载版权种子，防止滥用导致出口IP被封。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-06",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -940,7 +940,7 @@
     "answer": "【建议】核实官网域名拼写，不安装来源不明的私有描述文件。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-07",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -956,7 +956,7 @@
     "answer": "【建议】先检查本地Wi-Fi信号，再切换备用低倍率节点。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "tizi-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#tizi-08",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -972,7 +972,7 @@
     "answer": "【建议】实际扣除流量等于实际使用量乘以此倍率数值。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-01",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-01",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -988,7 +988,7 @@
     "answer": "【建议】香港物理距离近延迟低，日本出口纯净度较广。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-02",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1004,7 +1004,7 @@
     "answer": "【建议】新加坡东南亚业务首选，美西适合跨国长连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-03",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-03",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1020,7 +1020,7 @@
     "answer": "【建议】端到端内网传输，不过公共骨干网，晚高峰不抖动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-04",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1036,7 +1036,7 @@
     "answer": "【建议】DNS解析延迟高或服务端并发队列阻塞导致慢。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-05",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-05",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1052,7 +1052,7 @@
     "answer": "【建议】公网骨干波动引起，及时切换至备用机房专线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-06",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1068,7 +1068,7 @@
     "answer": "【建议】按工作、影音、下载设立不同命名标签分组。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-07",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1084,7 +1084,7 @@
     "answer": "【建议】原生住宅IP风控门槛低，机房广播IP易遇验证码。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-08",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1100,7 +1100,7 @@
     "answer": "【建议】每次单节点全开测速可能消耗几百兆真实流量。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-09",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-09",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1116,7 +1116,7 @@
     "answer": "【建议】适合跨国区域定价比对与特定本地化服务开发。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-10",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-10",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1148,7 +1148,7 @@
     "answer": "【建议】多入口具备更好容灾，单点故障时能平滑漂移。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-12",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-12",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1180,7 +1180,7 @@
     "answer": "【建议】BGP多线接入提升首跳速度，Anycast智能选路由。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "node-14",
     "canonicalTarget": "https://jichangplus.xyz/faq/#node-14",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1212,7 +1212,7 @@
     "answer": "【建议】大多数按自然月或购买日重置，不结转到下月。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-02",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1244,7 +1244,7 @@
     "answer": "【建议】需核查是否误用了 2x~5x 高倍率节点产生翻倍。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-04",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1292,7 +1292,7 @@
     "answer": "【建议】尊重契约核查旧方案有效期，必要时平移至备选。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-07",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1308,7 +1308,7 @@
     "answer": "【建议】按人均50~100GB/月预估，结合影音大户适当浮动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-08",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1324,7 +1324,7 @@
     "answer": "【建议】优选正规第三方聚合支付，避免绑定敏感卡号。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-09",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-09",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1340,7 +1340,7 @@
     "answer": "【建议】切断流媒体4K画质，关闭云盘大文件自动同步。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "plan-10",
     "canonicalTarget": "https://jichangplus.xyz/faq/#plan-10",
-    "internalLink": "/traffic-nodes/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1356,7 +1356,7 @@
     "answer": "【建议】只要未超过服务商并发限制，完全可同时在线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-01",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-01",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1372,7 +1372,7 @@
     "answer": "【建议】路由器全局分流，单机客户端针对性定制微调。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-02",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-02",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1388,7 +1388,7 @@
     "answer": "【建议】使用支持 iCloud 云同步的客户端实现多端配置互通。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-03",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-03",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1404,7 +1404,7 @@
     "answer": "【建议】关闭电池深度优化，锁定任务卡片并开启自启动。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-04",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-04",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1436,7 +1436,7 @@
     "answer": "【建议】保持Wi-Fi局域网与分流规则一致，确保长连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-06",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1452,7 +1452,7 @@
     "answer": "【建议】为无法安装客户端的电视机、游戏机提供连接。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-07",
-    "internalLink": "/multi-device/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1468,7 +1468,7 @@
     "answer": "【建议】利用客户端导出备份配置包或直接重导订阅url。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "device-08",
     "canonicalTarget": "https://jichangplus.xyz/faq/#device-08",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1484,7 +1484,7 @@
     "answer": "【建议】查本地网络是否通、订阅是否到期、核心配置是否错。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "safe-01",
     "canonicalTarget": "https://jichangplus.xyz/faq/#safe-01",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1516,7 +1516,7 @@
     "answer": "【建议】检查传输协议握手及远端出口IP是否与节点匹配。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "safe-03",
     "canonicalTarget": "https://jichangplus.xyz/faq/#safe-03",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1548,7 +1548,7 @@
     "answer": "【建议】联系官方在线客服或工单并提供最近支付交易凭据。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "safe-05",
     "canonicalTarget": "https://jichangplus.xyz/faq/#safe-05",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1564,7 +1564,7 @@
     "answer": "【建议】收藏服务商官方通知频道并核对备用官方入口。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "safe-06",
     "canonicalTarget": "https://jichangplus.xyz/faq/#safe-06",
-    "internalLink": "/subscription-management/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
@@ -1580,7 +1580,7 @@
     "answer": "【建议】绝非绝对匿名，合规守法是持续使用唯一底线。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。",
     "slug": "safe-07",
     "canonicalTarget": "https://jichangplus.xyz/faq/#safe-07",
-    "internalLink": "/safe-use/",
+    "internalLink": "/client-tips/",
     "lastChecked": "2026-09-23"
   },
   {
