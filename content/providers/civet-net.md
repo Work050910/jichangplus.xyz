@@ -66,5 +66,5 @@ bodyCharCount: 992
 <div class="in-article-cta">
   <h4>查看 灵猫网络 Civet 当前套餐与官方信息</h4>
   <p>优惠码：<strong>暂无优惠码</strong>（如适用请在结算时填写）｜ 最后核验：2026-09-19</p>
-  <a href="https://civet.net/#/?code=aff_civet" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
+  <a href="https://vip02.civetaff.com/#/?code=MLVZXxQj" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
 </div>

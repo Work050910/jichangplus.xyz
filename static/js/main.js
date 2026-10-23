@@ -32,40 +32,72 @@ document.addEventListener("DOMContentLoaded", function() {
   var searchInput = document.getElementById("site-search-input");
   var searchDropdown = document.getElementById("search-results");
   var searchIndex = null;
+  var isIndexLoading = false;
+  var selectedIndex = -1;
 
   if (searchInput && searchDropdown) {
-    // Lazy load search index
-    function loadSearchIndex() {
-      if (!searchIndex) {
-        fetch("/search-index.json")
-          .then(function(res) { return res.json(); })
-          .then(function(data) { searchIndex = data; })
-          .catch(function(err) { console.error("Search index failed:", err); });
+    function loadSearchIndex(callback) {
+      if (searchIndex) {
+        if (callback) callback();
+        return;
       }
+      if (isIndexLoading) return;
+      isIndexLoading = true;
+      fetch("/search-index.json")
+        .then(function(res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          searchIndex = data;
+          isIndexLoading = false;
+          if (callback) callback();
+          if (searchInput.value.trim()) {
+            doSearch();
+          }
+        })
+        .catch(function(err) {
+          isIndexLoading = false;
+          console.error("Search index failed:", err);
+        });
     }
 
-    searchInput.addEventListener("focus", loadSearchIndex);
+    // Preload index in background so search is instantaneous
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(function() { loadSearchIndex(); });
+    } else {
+      setTimeout(function() { loadSearchIndex(); }, 800);
+    }
 
-    searchInput.addEventListener("input", function() {
-      var query = searchInput.value.trim().toLowerCase();
-      if (!query || !searchIndex) {
+    function doSearch() {
+      var rawQuery = searchInput.value.trim();
+      if (!rawQuery) {
         searchDropdown.innerHTML = "";
         searchDropdown.classList.remove("active");
+        selectedIndex = -1;
         return;
       }
 
+      if (!searchIndex) {
+        searchDropdown.innerHTML = "<div class='search-result-item' style='color:#64748b;'>正在加载搜索索引...</div>";
+        searchDropdown.classList.add("active");
+        loadSearchIndex();
+        return;
+      }
+
+      var terms = rawQuery.toLowerCase().split(/\s+/).filter(Boolean);
       var matches = searchIndex.filter(function(item) {
-        return (item.title && item.title.toLowerCase().indexOf(query) !== -1) ||
-               (item.desc && item.desc.toLowerCase().indexOf(query) !== -1) ||
-               (item.keywords && item.keywords.toLowerCase().indexOf(query) !== -1);
+        var text = ((item.title || "") + " " + (item.desc || "") + " " + (item.keywords || "")).toLowerCase();
+        return terms.every(function(t) { return text.indexOf(t) !== -1; });
       }).slice(0, 8);
 
+      selectedIndex = -1;
       if (matches.length === 0) {
-        searchDropdown.innerHTML = "<div class='search-result-item' style='color:#64748b;'>未找到匹配文章</div>";
+        searchDropdown.innerHTML = "<div class='search-result-item' style='color:#64748b;'>未找到包含 “" + rawQuery + "” 的相关文章</div>";
         searchDropdown.classList.add("active");
       } else {
-        var html = matches.map(function(item) {
-          return "<a href='" + item.url + "' class='search-result-item'>" +
+        var html = matches.map(function(item, idx) {
+          return "<a href='" + item.url + "' class='search-result-item' data-index='" + idx + "'>" +
                  "<div class='search-result-title'>" + item.title + "</div>" +
                  "<div class='search-result-desc'>" + (item.desc || "").substring(0, 48) + "...</div>" +
                  "</a>";
@@ -73,18 +105,67 @@ document.addEventListener("DOMContentLoaded", function() {
         searchDropdown.innerHTML = html;
         searchDropdown.classList.add("active");
       }
-    });
+    }
 
-    // Close on outside click or Escape
-    document.addEventListener("click", function(e) {
-      if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
-        searchDropdown.classList.remove("active");
+    searchInput.addEventListener("focus", function() {
+      loadSearchIndex();
+      if (searchInput.value.trim()) {
+        doSearch();
       }
     });
 
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") {
+    searchInput.addEventListener("input", doSearch);
+
+    // Keyboard navigation (ArrowDown, ArrowUp, Enter, Escape)
+    searchInput.addEventListener("keydown", function(e) {
+      var items = searchDropdown.querySelectorAll("a.search-result-item");
+      if (!items.length) {
+        if (e.key === "Escape") {
+          searchDropdown.classList.remove("active");
+        }
+        return;
+      }
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        selectedIndex++;
+        if (selectedIndex >= items.length) selectedIndex = 0;
+        updateSelection(items);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        selectedIndex--;
+        if (selectedIndex < 0) selectedIndex = items.length - 1;
+        updateSelection(items);
+      } else if (e.key === "Enter") {
+        if (selectedIndex >= 0 && selectedIndex < items.length) {
+          e.preventDefault();
+          items[selectedIndex].click();
+        } else if (items.length > 0) {
+          e.preventDefault();
+          items[0].click();
+        }
+      } else if (e.key === "Escape") {
         searchDropdown.classList.remove("active");
+        selectedIndex = -1;
+      }
+    });
+
+    function updateSelection(items) {
+      items.forEach(function(el, idx) {
+        if (idx === selectedIndex) {
+          el.classList.add("selected");
+          el.scrollIntoView({ block: "nearest" });
+        } else {
+          el.classList.remove("selected");
+        }
+      });
+    }
+
+    // Close on outside click
+    document.addEventListener("click", function(e) {
+      if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+        searchDropdown.classList.remove("active");
+        selectedIndex = -1;
       }
     });
   }

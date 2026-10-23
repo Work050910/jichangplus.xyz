@@ -184,6 +184,7 @@ def md_to_html(md_text, return_headings=False):
   in_ol = False
   headings = []
   h_counter = 0
+  in_airport_card = False
   
   for line in lines:
     line_s = line.strip()
@@ -195,14 +196,28 @@ def md_to_html(md_text, return_headings=False):
     if line_s.startswith("### "):
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
+      if in_airport_card:
+        html_lines.append("</div>")
+        in_airport_card = False
+
       raw_h = line_s[4:].strip()
       h_counter += 1
-      hid = f"airport-{slugify_heading(raw_h)}" if re.match(r"^\d+\.", raw_h) else f"h3-{h_counter}-{slugify_heading(raw_h)}"
+      is_airport = bool(re.match(r"^\d+\.", raw_h))
+      hid = f"airport-{slugify_heading(raw_h)}" if is_airport else f"h3-{h_counter}-{slugify_heading(raw_h)}"
       headings.append((3, raw_h, hid))
+
+      if is_airport:
+        html_lines.append(f'<div class="airport-review-card" id="{hid}-box">')
+        in_airport_card = True
+
       html_lines.append(f'<h3 id="{hid}">{format_inline_md(raw_h)}</h3>')
     elif line_s.startswith("## "):
       if in_ul: html_lines.append("</ul>"); in_ul = False
       if in_ol: html_lines.append("</ol>"); in_ol = False
+      if in_airport_card:
+        html_lines.append("</div>")
+        in_airport_card = False
+
       raw_h = line_s[3:].strip()
       h_counter += 1
       hid = f"sec-{h_counter}-{slugify_heading(raw_h)}"
@@ -231,6 +246,7 @@ def md_to_html(md_text, return_headings=False):
 
   if in_ul: html_lines.append("</ul>")
   if in_ol: html_lines.append("</ol>")
+  if in_airport_card: html_lines.append("</div>")
   
   if return_headings:
     return "\n".join(html_lines), headings
@@ -350,8 +366,8 @@ top4_cards = ""
 for p in providers[:4]:
   top4_cards += f"""<div class="provider-card primary-rank rank-{p['rank']}">
     <div class="provider-card-header">
-      <span class="provider-rank-badge">推荐 #{p['rank']}</span>
       <h3 class="provider-name">{p['name']}</h3>
+      <span class="provider-rank-badge">推荐 #{p['rank']}</span>
     </div>
     <div class="provider-price-row" style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
       <div class="provider-price" style="font-size: 1.25rem; font-weight: 800; color: #e11d48; white-space: nowrap;">{p['priceFrom']}</div>
@@ -387,14 +403,14 @@ for p in providers[:12]:
 home_body = f"""<section class="hero-section">
   <div class="container">
     <span class="hero-badge">当前年份性价比机场推荐 · Clash 机场测评 · 节点测速与选择</span>
-    <h1 class="hero-title">JichangPlus 机场加：让订阅、设备和日常使用更有条理</h1>
+    <h1 class="hero-title">JichangPlus 机场加：最新性价比机场推荐与稳定专线节点测评指南</h1>
     <p class="hero-description">{hero_text}</p>
     <div class="hero-actions">
       <a href="/recommend/" class="btn-primary">查看当前精选机场推荐榜</a>
       <a href="/service/" class="btn-secondary">机场服务说明</a>
       <a href="/faq/" class="btn-secondary">查阅 100 常见问题解答</a>
     </div>
-    <div class="hero-disclosure">披露说明：本站包含赞助邀请链接 (sponsored nofollow noopener)，所有排序与推荐依据真实核验记录与使用场景，价格以各结算页为准。</div>
+    <div class="hero-disclosure">披露说明：本站包含赞助邀请链接 (sponsored nofollow noopener)，所有排序与推荐依据真实核验记录与客观使用场景。</div>
   </div>
 </section>
 
@@ -402,9 +418,9 @@ home_body = f"""<section class="hero-section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">核心推荐榜单：按使用场景匹配可靠方案</h2>
-      <p class="section-desc">本站严格区分并固定前四名主推服务，涵盖多地区专线、7元月付小流量备用、晚高峰流媒体及自研轻量端。</p>
+      <p class="section-desc">本站严格区分并固定前四名主推服务，涵盖多地区专线、84元年付（折合7元/月）小流量备用、晚高峰流媒体及自研轻量端。</p>
     </div>
-    <div class="cards-grid">
+    <div class="cards-grid cards-grid-4">
       {top4_cards}
     </div>
   </div>
@@ -470,19 +486,19 @@ home_body = f"""<section class="hero-section">
       <details class="faq-item" open>
         <summary class="faq-question">【新手指南】新手如何根据日常需求挑选合适的机场套餐？</summary>
         <div class="faq-answer">
-          <p>【建议】月付试用，勿直接长付。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+          <p>【建议】首次选用优先按月付费试水，核验晚高峰连通性与本地宽带匹配度，切忌直接大额长付。日常文本与即时通讯约需30-50GB/月，高频4K影音与大型下载建议150GB以上。同时务必核对套餐支持的并发设备数限制，优选提供稳定IPLC/IEPL内网专线与多出口节点的服务商，保障使用体验稳定可靠。</p>
         </div>
       </details>
       <details class="faq-item" open>
         <summary class="faq-question">【Clash进阶】Clash 规则模式与全局模式有什么本质区别？</summary>
         <div class="faq-answer">
-          <p>【建议】日常推荐规则分流，特定调试时使用全局。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+          <p>【建议】日常使用推荐规则分流，特定调试时使用全局。核心区别在于路由分流逻辑：规则模式(Rule)根据内置分流规则判定，国内网站（如百度、淘宝）直连不消耗代理流量，海外目标走代理节点，兼顾访问速度与隐私；全局模式(Global)将所有设备出站网络请求强制经由单一代理节点转发，适合规则临时失效排障或特定业务固定IP，日常长期开启易引起国内应用卡顿与流量浪费。</p>
         </div>
       </details>
       <details class="faq-item" open>
         <summary class="faq-question">【流量管理】机场节点的倍率到底是什么意思？如何计算扣费？</summary>
         <div class="faq-answer">
-          <p>【建议】实际扣除流量等于实际使用量乘以此倍率数值。适用条件：常规日常网络维护与稳定进阶配置场景。操作要点：①首先检查当前订阅是否正常同步，并确认客户端核心版本；②进入系统设置核对DNS防泄漏状态与分流规则，排除本地网络干扰；③根据实际流量消耗与设备并发合理配置，避免多端挤占冲突。详细配置步骤与进阶技巧请参考本站【系列长文指南】。</p>
+          <p>【建议】实际扣除流量等于实际使用量乘以此倍率数值。具体扣费计算例子：若连接0.5倍率节点下载10GB大文件，账户仅扣除5GB配额，适合下载节省流量；连接1.0倍率标准节点使用10GB则正常扣除10GB；若连接3.0倍率高成本专线节点观看10GB超高清视频，账户将快速消耗30GB流量。日常连接前务必看清节点名称标注的倍率倍数，避免大流量误连高倍率线路导致配额耗尽。</p>
         </div>
       </details>
     </div>
@@ -501,7 +517,7 @@ home_schema = {
   "description": profile["siteTopic"]
 }
 
-write_page("index.html", wrap_html(SITE_TITLE, profile["siteTopic"], DOMAIN + "/", "JichangPlus 机场加：让订阅、设备和日常使用更有条理", home_body, json_ld=home_schema))
+write_page("index.html", wrap_html(SITE_TITLE, profile["siteTopic"], DOMAIN + "/", "JichangPlus 机场加：最新性价比机场推荐与稳定专线节点测评指南", home_body, json_ld=home_schema))
 
 # --- 2. SECTION LANDING PAGES & EXPANDED ARTICLES ---
 sections = [

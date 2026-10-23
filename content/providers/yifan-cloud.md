@@ -66,5 +66,5 @@ bodyCharCount: 988
 <div class="in-article-cta">
   <h4>查看 一翻云 当前套餐与官方信息</h4>
   <p>优惠码：<strong>暂无优惠码</strong>（如适用请在结算时填写）｜ 最后核验：2026-09-19</p>
-  <a href="https://yifan.cloud/#/?code=aff_yifan" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
+  <a href="https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
 </div>

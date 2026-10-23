@@ -66,5 +66,5 @@ bodyCharCount: 980
 <div class="in-article-cta">
   <h4>查看 FlyV 飞V 当前套餐与官方信息</h4>
   <p>优惠码：<strong>暂无优惠码</strong>（如适用请在结算时填写）｜ 最后核验：2026-09-19</p>
-  <a href="https://flyv.link/#/?code=aff_flyv" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
+  <a href="https://feiv289.flyvaff.com/#/?code=qQCT0BeY" target="_blank" rel="sponsored nofollow noopener" class="btn-cta">前往官方页面核对套餐</a>
 </div>

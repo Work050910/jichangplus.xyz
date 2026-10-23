@@ -82,6 +82,34 @@ a:hover {
   margin-right: auto;
 }
 
+/* Code & Pre Blocks */
+pre, code {
+  font-family: var(--font-mono);
+}
+pre {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px 16px;
+  overflow-x: auto;
+  max-width: 100%;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: #0f172a;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1em;
+}
+
 /* Header */
 .site-header {
   background: #ffffff;
@@ -222,6 +250,7 @@ a:hover {
   padding: 50px 0 40px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   border-bottom: 1px solid var(--border-color);
+  text-align: center;
 }
 
 .hero-badge {
@@ -234,6 +263,7 @@ a:hover {
   padding: 4px 10px;
   border-radius: 9999px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .hero-title {
@@ -243,6 +273,7 @@ a:hover {
   color: var(--text-main);
   margin-bottom: 18px;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .hero-description {
@@ -250,7 +281,8 @@ a:hover {
   line-height: 1.75;
   color: var(--text-muted);
   max-width: 900px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
+  text-align: center;
 }
 
 .hero-actions {
@@ -258,6 +290,7 @@ a:hover {
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -293,6 +326,7 @@ a:hover {
   font-size: 0.8rem;
   color: var(--text-light);
   margin-top: 14px;
+  text-align: center;
 }
 
 /* Sections */
@@ -303,6 +337,7 @@ a:hover {
 
 .section-header {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-title {
@@ -310,11 +345,16 @@ a:hover {
   font-weight: 700;
   color: var(--text-main);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .section-desc {
   font-size: 0.95rem;
   color: var(--text-muted);
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards Grid */
@@ -322,6 +362,24 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 20px;
+}
+
+.cards-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .cards-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-grid-4 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cards-grid-2 {
@@ -354,8 +412,9 @@ a:hover {
 
 .provider-card-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
 }
 
@@ -983,8 +1042,11 @@ a:hover {
   border-bottom: 1px solid #f1f5f9;
   text-decoration: none !important;
 }
-.search-result-item:hover {
-  background: #f8fafc;
+.search-result-item:hover,
+.search-result-item.selected {
+  background: #eff6ff;
+  border-left: 3px solid var(--brand-blue);
+  padding-left: 11px;
 }
 .search-result-title {
   font-size: 0.9rem;
@@ -1256,6 +1318,93 @@ h2, h3, .article-card {
   flex: 1;
   min-width: 0;
   max-width: 860px;
+}
+
+/* ==========================================================================
+   Airport Review Cards (清晰分段与卡片化呈现)
+   ========================================================================== */
+.airport-review-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.airport-review-card:hover {
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.airport-review-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #eff6ff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.airport-review-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.airport-review-card ul li {
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+  margin-bottom: 0;
+}
+
+.airport-review-card ul li strong {
+  color: #0f172a;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+/* 资费行样式增强 */
+.airport-review-card ul li:first-child {
+  background: #f1f5f9;
+  border-left-color: #3b82f6;
+  font-weight: 500;
+}
+
+/* 官网注册直达按钮（分段底部醒目卡片按钮） */
+.airport-review-card ul li:last-child {
+  background: #eff6ff;
+  border-left-color: #2563eb;
+  padding: 14px 18px;
+  margin-top: 4px;
+}
+
+.airport-review-card ul li:last-child a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  background: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+  transition: background 0.15s ease;
+}
+
+.airport-review-card ul li:last-child a:hover {
+  background: #1d4ed8 !important;
 }
 
 .article-sidebar-right {
